@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>IntCore</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+<!-- تضمين jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- تضمين Slick Slider -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- أضف الرابط لملف الأسليدر من Slick -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<script src="assets/js/script.js" defer></script>
+</head>
+
+<body>
+ 
+  
+<!-- ======= Header ======= -->
+<header id="header" class="fixed-top">
+  <div class="container d-flex align-items-center justify-content-between mt-2">
+      <div class="logo-wrapper">
+         
+          <div class="logo text-center"><img src="assets/img/IntCore.jpg" alt="IntCore"></div>
+      </div>
+      <nav id="navbar" class="navbar order-last order-lg-0 p-70 mr-5">
+          <ul>
+              <li class="active"><a class="nav-link " href="#">Home</a></li>
+              <li class="dropdown">
+                  <a href="#"><span>Products</span> <i class="fa-solid fa-caret-down" style="color:#ffffff; margin-left:10px"></i></a>
+                  <ul>
+                      <li><a href="#">Product 1</a></li>
+                      <li><a href="#">Product 2</a></li>
+                      <li><a href="#">Product 3</a></li>
+                  </ul>
+              </li>
+              <li class="dropdown">
+                  <a href="#"><span>Services</span> <i class="fa-solid fa-caret-down" style="color:#ffffff; margin-left:10px"></i></a>
+                  <ul>
+                      <li><a href="#">Service 1</a></li>
+                      <li><a href="#">Service 2</a></li>
+                      <li><a href="#">Service 3</a></li>
+                  </ul>
+              </li>
+              <li><a class="nav-link scrollto" href="#">Case Studies</a></li>
+              <li><a class="nav-link scrollto" href="#">Company</a></li>
+              <li><a class="nav-link scrollto hidden-md" href="#">Blog</a></li> 
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+      <div class="contact-info d-none d-lg-flex align-items-center ">
+         
+          <div class="circle-icon hidden-sm"> 
+              <i class="bi bi-telephone-fill"></i>
+          </div>
+          <span> +971529235518</span>
+      </div>
+      <!-- "Contact Us" -->
+      <a href="#about" class="ContactUs-btn scrollto hidden-md">CONTACT US</a> 
+  </div>
+</header><!-- End Header -->
+
+
+ <!-- ======= main Section ======= -->
+
+ <section id="main" class="main d-flex align-items-center">
+  <div class="container">
+    <div class="row gy-4 d-flex justify-content-between align-items-center">
+      <div class="col-lg-6 order-1 order-lg-1 d-flex flex-column justify-content-center">
+       
+     
+        <h2 class="text-left text-white mb-3 d-lg-block" data-aos="fade-up" style="font-weight: bold; font-size: 2.4rem; margin-top: .9rem; color:#ffffff">Be a Part of <span class="red-underline">Our Success Stories</span> <br class="mobile-only"> <span class="red-underline"></span></h2>
+        <h5 class="text-left text-white mb-4" data-aos="fade-up" style="font-size: 1.5rem; margin-top: .2rem; font-weight: lighter; color:#ffffff">
+          IntCore is
+        </h5>
+        <p class="text-left text-white mb-2" data-aos="fade-up" style="font-size: 1.2rem; font-weight: lighter;color:#ffffff ">
+         Best digital service company in Dubai, providing website <br> development, mobile app development, UI/UX design, digital <br>marketing, and more...
+        </p>
+        
+        <div class="text-left">
+          <button class="btn1 btn-primary creative-btn1 mb-5 mb-lg-4" data-aos="fade-up" data-aos-delay="200" style=" font-size: 15px; margin-top: 25px; border: none; color:#E97176; width:30%; margin-right: 20px;">
+            Get Quotation <img src="assets/img/FontAwsome (angle-double-right).png"style=" margin-left:5px;" alt="">
+          </button>
+        </div>
+        
+      
+        <div class="row gy-4" data-aos="fade-up" data-aos-delay="400">
+          <div class="col-lg-4 d-flex justify-content-center">
+            <div class="stats-item text-center mb-6 mb-lg-4">
+              <img src="assets/img/222.jpg" class="img-fluid" alt="Clients Image">
+            </div>
+          </div><!-- End Stats Item -->
+          <div class="col-lg-4 d-flex justify-content-center">
+            <div class="stats-item text-center mb-6 mb-lg-4">
+              <img src="assets/img/55.jpg" class="img-fluid" alt="Projects Image">
+            </div>
+          </div><!-- End Stats Item -->
+          <div class="col-lg-4 d-flex justify-content-center">
+            <div class="stats-item text-center mb-6 mb-lg-4">
+              <img src="assets/img/Capture.PNG1.PNG" class="img-fluid" alt="Support Image">
+            </div>
+          </div><!-- End Stats Item -->
+        </div>
+      </div>
+      <div class="col-lg-5 order-2 order-lg-1 hero-img" data-aos="zoom-out">
+        <div class="card" style="background-color: #232932; border-radius: 30px; width: 100%;">
+            <div class="card-body">
+                <h2 class="card-title text-center mb-4 fw-bold">Leave your contact <br> and we will contact you ASAP</h2>
+                <form action="#" method="post">
+                    <div class="mb-3">
+                        <label for="name" class="form-label text-gray"></label>
+                        <div class="input-group" style="border-radius: 10px;">
+                            <span class="input-group-text" id="name-addon" style="border-top-left-radius: 50px; border-bottom-left-radius: 50px; padding: 10px; background-color: #232932;">
+                                <i class="fa-solid fa-circle-user" style="color: white; font-size: 25px; margin-left: 10px; margin-right: 7px;"></i>
+                            </span>
+                            <input type="text" class="form-control text-white" id="name1" name="name" placeholder="What is your name?" required="required" style="border-radius: 0px 50px 50px 0px; background-color: #232932; color: white; border-left: 1;">
+
+
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label text-white"></label>
+                        <div class="input-group" style="border-radius: 10px;">
+                            <span class="input-group-text" id="email-addon" style="border-top-left-radius: 50px; border-bottom-left-radius: 50px; padding: 10px; background-color: #232932;">
+                                <img src="assets/img/FontAwsome (at).png" alt="" style="color: white; text-align: center; font-size: 25px; margin-left: 10px;margin-right: 7px;">
+                            </span>
+                            <input type="text" class="form-control text-white" id="Phone1" name="Phone" placeholder="Let’s have your professional email" required="required" style="border-radius: 0px 50px 50px 0px; background-color: #232932; color: white; border-left: 1;">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="Mobile-number" class="form-label text-white"></label>
+                        <div class="input-group" style="border-radius: 10px;">
+                            <span class="input-group-text" id="mobile-addon" style="border-top-left-radius: 50px; border-bottom-left-radius: 50px; padding: 10px; background-color: #232932;">
+                                <img src="assets/img/download (1).png1.png" alt="mobile-number" style="width: 30px; height: auto; margin-left: 10px;">
+                                <span style="color: white;  font-size: 15px; margin-left: 10px;"> +971</span>
+                            </span>
+                            <input type="text" class="form-control" id="mobile-number1" name="mobile-number" placeholder="What about Your mobile?" required="required" style="border-radius: 0px 50px 50px 0px;background-color: #232932; color: white; border-left: 1;">
+                        </div>
+                    </div>
+                    <div class="mb-3 text-center text-white" style="margin-top: 30px;">
+                        <div class="input-group" style="border-radius: 10px;">
+                            <textarea class="form-control7 text-white" id="message1" name="message" rows="3" placeholder="  Like to tell us about your business?" style="border-radius: 10px; width: 100%; background-color: #232932; color: white !important; margin-top: 10px;"></textarea>
+                        </div>
+                    </div>
+                </form>
+        
+            </form>
+            <div style="margin-bottom: 20px; margin-right: 20px; text-align: right; margin-top: px;"> 
+              <button id="submit-button" class="btn2 btn-primary" style="border-radius: 30px; width: 40%; font-size: 1rem; background-color: #E97176; margin-left: 10px; ">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="26" viewBox="0 0 30 26">
+                  <path id="FontAwsome_weixin_" data-name="FontAwsome (weixin)" d="M33.3,39.868a7.5,7.5,0,0,1,1.025.064C33.422,35.383,28.835,32,23.62,32,17.773,32,13,36.224,13,41.6c0,3.1,1.6,5.657,4.249,7.636l-1.053,3.4,3.709-1.979a17.185,17.185,0,0,0,3.72.563c.338,0,.66-.017,1-.046a8.451,8.451,0,0,1-.338-2.367A8.94,8.94,0,0,1,33.3,39.868ZM27.6,36.8a1.413,1.413,0,0,1,0,2.82,1.421,1.421,0,1,1,0-2.82Zm-7.44,2.82a1.421,1.421,0,1,1,0-2.82,1.412,1.412,0,0,1,0,2.82ZM43,48.676c0-4.52-4.249-8.2-9.022-8.2-5.056,0-9.022,3.679-9.022,8.2s3.971,8.2,9.022,8.2a13.056,13.056,0,0,0,3.2-.574L40.087,58l-.807-2.82C41.418,53.474,43,51.217,43,48.676ZM31.049,47.254a1.131,1.131,0,0,1,0-2.257,1.144,1.144,0,1,1,0,2.257Zm5.842,0a1.131,1.131,0,0,1,0-2.257,1.144,1.144,0,1,1,0,2.257Z" transform="translate(-13 -32)" fill="#fff"/>
+                </svg>
+                
+                  <span style="color: white; margin-right: 10px; margin-left: 10px;">Let's Talk</span>
+                  
+              </button>
+          </div>
+          
+          
+          
+</div>
+
+          
+          
+            </div>
+          </div>
+        </div>
+     
+</section>
+
+<style>
+  @media (max-width: 768px) {
+    .center-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+.subtext{
+  font-weight: 3vh;
+
+}
+    .images-container {
+      display: block;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+  }
+</style>
+
+
+
+  <div id="experience-section" class="container-fluid">
+    <div class="row no-gutters"> 
+      <div class="col-md-9 mx-auto">
+        <div class="rounded-container p-"> 
+          <div class="d-flex align-items-center justify-content-center">
+            <div class="mr-md-0 text-center animated-content" style="width: 25%; margin-left: 15px;"> 
+              <h1 class="animated-plus-ten">10+</h1>
+              <p class="subtext">Years Experience <br> With Global Awards</p>
+            </div>
+            <div class="vertical-line mx-3 animated-content"></div>
+            <div class="col-md-6 align-self-center animated-content" style="width: 75%;"> 
+              <div class="img-container1">
+                <img src="assets/img/WhatsApp Image 2024-02-13 at 16.15.23_b29752be.jpg" alt="Image 1" class="img-fluid mb-2">
+                <img src="assets/img/WhatsApp Image 2024-02-13 at 16.15.26_ca437daf.jpg" alt="Image 2" class="img-fluid mb-2" style="margin-bottom: 12px !important;"> 
+                <img src="assets/img/WhatsApp Image 2024-02-13 at 16.15.25_efd13ed8.jpg" alt="Image 3" class="img-fluid mb-2" style="margin-bottom: 10px !important;"> 
+                <img src="assets/img/WhatsApp Image 2024-02-13 at 16.15.24_ae8909af.jpg" alt="Image 4" class="img-fluid mb-2" style="margin-bottom: 10px !important;"> 
+                <img src="assets/img/WhatsApp Image 2024-02-13 at 16.15.25_efd13ed8.jpg" alt="Image 5" class="img-fluid mb-2" style="margin-bottom: 10px !important;"> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+<!-- ======= Helping Section ======= -->
+<section id="help" class="helps">
+  <div class="container" data-aos="fade-up">
+      <div class="row">
+          <div class="col-12 text-left">
+              <h2 class="section-title" style="margin-top: 8%; font-size: 2rem;">
+                  How we help <span style="color: #FA6773; font-weight:bold;">business growth?</span> 
+                  <div class="separator"></div>
+                  <div class="separator1"></div>
+                  <div class="separator2"></div>
+              </h2>
+          </div>
+      </div>
+      
+      <div class="row">
+          <div class="col-lg-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+              <div class="icon-box"> 
+                  <img src="assets/img/5.jpg" alt="">
+                  <h4><a href="">Creative designs and UI/UX design</a></h4>
+                  <p>We Help Organizations Innovate And Build Brilliant Mobile Applications (Ios & Android) And Vrings Ideas Into Reality</p>
+              </div>
+          </div>
+  
+          <div class="col-lg-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box"> 
+                <img src="assets/img/2.jpg" alt="">
+                <h4><a href="">Mpbile App Development</a></h4>
+                <p>We Help Organizations Innovate And Build Brilliant Mobile Applications (Ios & Android) And Vrings Ideas Into Reality</p>
+            </div>
+        </div>          
+        <div class="col-lg-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+          <div class="icon-box"> 
+              <img src="assets/img/1.jpg" alt="">
+              <h4><a href="">Web App Development</a></h4>
+              <p>We Help Organizations Innovate And Build Brilliant Mobile Applications (Ios & Android) And Vrings Ideas Into Reality</p>
+          </div>
+      </div>
+      </div>
+  
+      <div class="row mt-4">
+          <div class="col-lg-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+              <div class="icon-box"> 
+                  <img src="assets/img/4.jpg" alt="">
+                  <h4><a href="">Digital Marketing</a></h4>
+                  <p>We Help Organizations Innovate And Build Brilliant Mobile Applications (Ios & Android) And Vrings Ideas Into Reality</p>
+              </div>
+          </div>
+  
+          <div class="col-lg-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box"> 
+                <img src="assets/img/6.jpg" alt="">
+                <h4><a href="">IT Consulting & DevOps Service</a></h4>
+                <p>We Help Organizations Innovate And Build Brilliant Mobile Applications (Ios & Android) And Vrings Ideas Into Reality</p>
+            </div>
+        </div>
+        <div class="col-lg-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+          <div class="icon-box"> 
+              <img src="assets/img/3.jpg" alt="">
+              <h4><a href="">Hosting Server</a></h4>
+              <p>We Help Organizations Innovate And Build Brilliant Mobile Applications (Ios & Android) And Vrings Ideas Into Reality</p>
+          </div>
+      </div>
+      </div>
+  </div>
+</section>
+
+  
+    
+      <!-- ======= Brands Section ======= -->
+      
+      <section class="my-1 py-lg-5 py-3" style="background-color: #FaFaFa;">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="sectionHeading text-left ">
+            <h2 class="section-title" style="margin-top: 1%; font-size: 2rem;">
+              <h2 class="section-title2 color-black" style="font-weight: bold; color:black;">How many brands  <br><span style="color: #FA5F6B;">Trusted IntCore?</span></h2>
+                <div class="separator"></div>
+                <div class="separator1"></div>
+                <div class="separator2"></div>
+            </h2>
+    </div>
+  </h2>
+</div>
+</div> 
+<div class="col-12 bg-red">
+  <div class="row clients-logo text-center align-items-center">
+    <div class="col-lg-2 col-3 p-lg-3 p-1">
+      <img src="assets/img/Clients/bb37e65.webp" alt="MIT" title="Egyptian Ministry of Communications and Information Technology" class="img-fluid grey-hovarable"></div>
+       <div class="col-lg-2 col-3 p-lg-3 p-1">
+      <img src="assets/img/Clients/0cd0d03.webp" alt="PPO" title="Egyptian Public Prosecution" class="img-fluid grey-hovarable"></div>
+       <div class="col-lg-2 col-3 p-lg-3 p-1">
+        <img src="assets/img/Clients/2218411.webp" alt="MOE" title="Ministry Of Education" class="img-fluid grey-hovarable"></div>
+         <div class="col-lg-2 col-3 p-lg-3 p-1">
+          <img src="assets/img/Clients/9164b78.webp" alt="MOH" title="Ministry Of Health" class="img-fluid grey-hovarable"></div> 
+          <div class="col-lg-2 col-3 p-lg-3 p-1"><img src="assets/img/Clients/0dc6c53.webp" alt="First Abu Dhabi Bank Application" title="Abu Dhabi Bank" class="img-fluid grey-hovarable"></div>
+           <div class="col-lg-2 col-3 p-lg-3 p-1"><img src="assets/img/Clients/16c6a6e.webp" alt="HSBC Abu Dhabi" title="HSBC Abu Dhabi" class="img-fluid grey-hovarable"></div>
+            <div class="col-lg-2 col-3 p-lg-3 p-1"><img src="assets/img/Clients/b354bae.webp" alt="EFG-Hermes" title="EFG-Hermes" class="img-fluid grey-hovarable"></div>
+             <div class="col-lg-2 col-3 p-lg-3 p-1"><img src="assets/img/Clients/fed912e.webp" alt="GIZ NGO Germany" title="GIZ NGO Germany" class="img-fluid grey-hovarable"></div>
+              <div class="col-lg-2 col-3 p-lg-3 p-1"><img src="assets/img/Clients/moun.webp" alt="Mountain View" title="Mountain View" class="img-fluid grey-hovarable"></div>
+               <div class="col-lg-2 col-3 p-lg-3 p-1"><img src="assets/img/Clients/164b92e.webp" alt="Americana" title="Americana" class="img-fluid grey-hovarable"></div> 
+               <div class="col-lg-2 col-3 p-lg-3 p-1"><img src="assets/img/Clients/e0898f7.webp" alt="CBC Channels" title="CBC Channels" class="img-fluid grey-hovarable"></div> 
+               <div class="col-lg-2 col-3 p-lg-3 p-1"><img src="assets/img/Clients/6b888ed.webp" alt="Asus" title="Asus" class="img-fluid grey-hovarable"></div> 
+               <div class="col-lg-2 col-3 p-lg-3 p-1"><img src="assets/img/Clients/7c61044.webp" alt="Tecno Mobile" title="Tecno Mobile" class="img-fluid grey-hovarable"></div>
+                <div class="col-lg-2 col-3 p-lg-3 p-1"><img src="assets/img/Clients/bda9799.webp" alt="Smaat Saudi Arabia" title="Smaat Saudi Arabia" class="img-fluid grey-hovarable"></div>
+                 <div class="col-lg-2 col-3 p-lg-3 p-1 d-lg-block d-none"><img src="assets/img/Clients/events.webp" alt="KSA Events2030" title="KSA Events2030" class="img-fluid grey-hovarable"></div>
+                  <div class="col-lg-2 col-3 p-lg-3 p-1 d-lg-block d-none"><img src="assets/img/Clients/fc75f73.webp" alt="codered" title="codered" class="img-fluid grey-hovarable"></div>
+                   <div class="col-lg-2 col-3 p-lg-3 p-1 d-lg-block d-none"><img src="assets/img/Clients/ecounc.webp" alt="EC-Council" title="EC-Council" class="img-fluid grey-hovarable"></div>
+                    <div class="col-lg-2 col-3 p-lg-3 p-1 d-lg-block d-none"><img src="assets/img/Clients/8a1017c.webp" alt="SODIC" title="SODIC" class="img-fluid grey-hovarable"></div> 
+                    <div class="col-lg-2 col-3 p-lg-3 p-1"><img src="assets/img/Clients/biz.webp" alt="Bizol Germany" title="Bizol Germany" class="img-fluid grey-hovarable"></div> 
+                    <div class="col-lg-2 col-3 p-lg-3 p-1"><img src="assets/img/Clients/haja.webp" alt="HayaChat Application in UK" title="HayaChat Application in UK" class="img-fluid grey-hovarable"></div> 
+                    <div class="col-lg-2 col-3 p-lg-3 p-1 d-lg-block d-none"><img src="assets/img/Clients/ph.webp" alt="Abdin-Pharmacies" title="Abdin-Pharmacies" class="img-fluid grey-hovarable"></div> 
+                    <div class="col-lg-2 col-3 p-lg-3 p-1 d-lg-block d-none"><img src="assets/img/Clients/fb28cbb.webp" alt="NSTI" title="NSTI" class="img-fluid grey-hovarable"></div> 
+                    <div class="col-lg-2 col-3 p-lg-3 p-1 d-lg-block d-none"><img src="assets/img/Clients/mode.webp" alt="Meddaro" title="Meddaro" class="img-fluid grey-hovarable"></div> 
+                    <div class="col-lg-2 col-3 p-lg-3 p-1"><img src="assets/img/Clients/438424c.webp" alt="Opmakeup USA" title="Opmakeup USA" class="img-fluid grey-hovarable"></div> 
+                    <div class="col-lg-2 col-3 p-lg-3 p-1 offset-lg-2">
+                      
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="container mt-2 pt-4">
+                  <div class="row align-items-center justify-content-center">
+                    <div class="col-md-7">
+                      <div class="border-dark p-2 d-flex justify-content-center align-items-center bg-black rounded-4 custom-padding custom-margin">
+                        <p class="text-left mt-3 text-light me-3" style="margin-right: 10px;">Need more information?</p>
+                        <div class="text-center"> 
+                          <a href="#" class="btn5 btn3-sm p-2" style="background-color: white; color:#E97176; border-radius: 20px; display: inline-block; margin-right: 15px;">
+                            <img src="assets/img/pdf.png" alt="Profile Image" style="width: 30px; height: 30px; margin-right: 10px; margin-left: 10px;color:#E97176;">Download Profile 
+                          </a>
+                          
+                          <a href="#" class="btn5 btn3-sm p-2" style="background-color: #E97176; color:white; border-radius: 20px; display: inline-block;margin-right: 15px; ">
+                            <img src="assets/img/req.jpg" alt="Profile Image" style="width: 20px; height: 27px; margin-right: 10px;margin-left: 10px; color:white;"> Request Meeting
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </section>
+             
+              
+
+   <!-- ======= Promising Section ======= -->
+   <style>
+    .custom-box {
+        width: 200px; /* Set fixed width */
+        height: 250px; /* Set fixed height */
+    }
+
+    /* Adjustments for smaller screens */
+    @media (max-width: 768px) {
+        .custom-box {
+            width: 150px; /* Adjusted width for smaller screens */
+            height: 200px; /* Adjusted height for smaller screens */
+        }
+    }
+
+    /* Add other breakpoints as necessary */
+</style>
+
+  <section class="bg-gray my-1 py-lg-5 py-3" style="background-color: #212227;">
+    <div class="container">
+        <div class="sectionHeading text-left ">
+            <h2 class="section-title2 color-black" style="font-weight: bold; color:#E97176;">What we are <br><span style="color: white;">Promising You?</span> <br>
+                <div class="separator"></div>
+                <div class="separator1"></div>
+                <div class="separator2"></div>
+            </h2>
+        </div>
+
+        <div class="d-flex justify-content-right align-items-center">
+            
+            <div class="custom-box p-1 mt-4 mr-1 ml-1 mb-1">
+                <div class="shadow bg-white radius-15 flex-column d-flex align-items-center justify-content-center p-2" style="background: #FFFFFF 0% 0% no-repeat padding-box; width:100%;
+                border-radius: 18px;
+                opacity: 1; ">
+                    <div class="col-12 text-center">
+                        <img src="assets/img/1 upd.png" alt="Software apps Delivery on time" title="Delivery on time" class="img-fluid" style="   border-radius: 15px;  margin-top:15px;  padding:10px; width:100%; height:60%;">
+                    </div> 
+                    <div class="col-12 pl-3 text-center mt-2 mb-3"style="text-align: center; letter-spacing: 0px;  color: #222933; opacity: 1; ">
+                        <h5>Commitment <br>on time </h5>
+                    </div>
+                </div>
+            </div>
+
+           
+            <div class="custom-box p-1 mt-4 mr-1 ml-1 mb-1">
+              <div class="shadow bg-white radius-15 flex-column d-flex align-items-center justify-content-center p-2" style="background: #FFFFFF 0% 0% no-repeat padding-box; width:100%;
+              border-radius: 18px;
+              opacity: 1; ">
+                  <div class="col-12 text-center">
+                      <img src="assets/img/1 upd.png" alt="Software apps Delivery on time" title="Delivery on time" class="img-fluid" style="   border-radius: 15px;  margin-top:15px;  padding:10px; width:100%; height:60%;">
+                  </div> 
+                  <div class="col-12 pl-3 text-center mt-2 mb-3"style="text-align: center; letter-spacing: 0px;  color: #222933; opacity: 1; ">
+                      <h5>Commitment <br>on time </h5>
+                  </div>
+              </div>
+          </div>
+            
+          <div class="custom-box p-1 mt-4 mr-1 ml-1 mb-1">
+            <div class="shadow bg-white radius-15 flex-column d-flex align-items-center justify-content-center p-2" style="background: #FFFFFF 0% 0% no-repeat padding-box; width:100%;
+            border-radius: 18px;
+            opacity: 1; ">
+                <div class="col-12 text-center">
+                    <img src="assets/img/1 upd.png" alt="Software apps Delivery on time" title="Delivery on time" class="img-fluid" style="   border-radius: 15px;  margin-top:15px;  padding:10px; width:100%; height:60%;">
+                </div> 
+                <div class="col-12 pl-3 text-center mt-2 mb-3"style="text-align: center; letter-spacing: 0px;  color: #222933; opacity: 1; ">
+                    <h5>Commitment <br>on time </h5>
+                </div>
+            </div>
+        </div>
+
+          
+        <div class="custom-box p-1 mt-4 mr-1 ml-1 mb-1">
+          <div class="shadow bg-white radius-15 flex-column d-flex align-items-center justify-content-center p-2" style="background: #FFFFFF 0% 0% no-repeat padding-box; width:100%;
+          border-radius: 18px;
+          opacity: 1; ">
+              <div class="col-12 text-center">
+                  <img src="assets/img/1 upd.png" alt="Software apps Delivery on time" title="Delivery on time" class="img-fluid" style="   border-radius: 15px;  margin-top:15px;  padding:10px; width:100%; height:60%;">
+              </div> 
+              <div class="col-12 pl-3 text-center mt-2 mb-3"style="text-align: center; letter-spacing: 0px;  color: #222933; opacity: 1; ">
+                  <h5>Commitment <br>on time </h5>
+              </div>
+          </div>
+      </div>
+
+          
+      <div class="custom-box p-1 mt-4 mr-1 ml-1 mb-1">
+        <div class="shadow bg-white radius-15 flex-column d-flex align-items-center justify-content-center p-2" style="background: #FFFFFF 0% 0% no-repeat padding-box; width:100%;
+        border-radius: 18px;
+        opacity: 1; ">
+            <div class="col-12 text-center">
+                <img src="assets/img/1 upd.png" alt="Software apps Delivery on time" title="Delivery on time" class="img-fluid" style="   border-radius: 15px;  margin-top:15px;  padding:10px; width:100%; height:60%;">
+            </div> 
+            <div class="col-12 pl-3 text-center mt-2 mb-3"style="text-align: center; letter-spacing: 0px;  color: #222933; opacity: 1; ">
+                <h5>Commitment <br>on time </h5>
+            </div>
+        </div>
+    </div>
+
+          
+    <div class="custom-box p-1 mt-4 mr-1 ml-1 mb-1">
+      <div class="shadow bg-white radius-15 flex-column d-flex align-items-center justify-content-center p-2" style="background: #FFFFFF 0% 0% no-repeat padding-box; width:100%;
+      border-radius: 18px;
+      opacity: 1; ">
+          <div class="col-12 text-center">
+              <img src="assets/img/1 upd.png" alt="Software apps Delivery on time" title="Delivery on time" class="img-fluid" style="   border-radius: 15px;  margin-top:15px;  padding:10px; width:100%; height:60%;">
+          </div> 
+          <div class="col-12 pl-3 text-center mt-2 mb-3"style="text-align: center; letter-spacing: 0px;  color: #222933; opacity: 1; ">
+              <h5>Commitment <br>on time </h5>
+          </div>
+      </div>
+  </div>
+        </div>
+    </div>
+    </section>
+  
+  
+
+  <section class="container customer-feedback">
+      <div class="row">
+          <div class="col-md-12">
+              <div class="feedback-header">
+                  <h2 class="text-black font-weight-bold mb-4 font-size-mobile" style="font-weight: bold; color:black;">What our Customers Said About <br><span style="color: #FA5F6B">IntCore Services</span>
+                      <br><div class="separator"></div>
+                      <div class="separator1"></div>
+                      <div class="separator2"></div>
+                  </h2>
+              </div>
+          </div>
+          <div class="col-md-12">
+              <!-- Add a container for the slider -->
+              <div class="feedback-slider">
+                  <!-- First feedback item -->
+                  <div class="feedback-item feedback-item-right">
+                      <div class="container" style="background: #FFFFFF; box-shadow: 0px 0px 53px #91919129; border-radius: 20px; opacity: 1; padding:15px;">
+                          <div class="row">
+                              <div class="col-md-8">
+                                  <div class="feedback-text mt-md-0 mt-4" style="line-height: 1.5em;">
+                                      <h5 class="color-black" style="text-align: left; letter-spacing: 0px; color: #232932; opacity: 1; margin-left: 10px;">AVP for Innovation, First Abu Dhabi Bank</h5>
+                                      <h5 class="customer-name" style="text-align: left;  letter-spacing: 0px; color: #E97176; opacity: 1; margin-left: 10px;">Salma Al Rafie</h5>
+                                      <p style="color: black; font-weight: lighter; margin-left: 10px; margin-right: 10px;">The delivered platform met all of the client's expectations, especially its well-thought out UI/UX design. Intcore made sure both sides were always on the same page by communicating updates frequently. Customers can expect a trustworthy and tech-savvy partner, who delivers on their promises.</p>
+                                  </div>
+                              </div>
+                              <div class="col-md-4 d-flex justify-content-end align-items-center">
+                                  <img src="assets/img/FAB.jpg" alt="Customer Image" class="img-fluid" style="width: 190px; height: 100%; margin-right: 40px; background: transparent url('img/First_Abu_Dhabi_Bank_Logo.svg.png') 0% 0% no-repeat padding-box;">
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+  
+                  <!-- Second feedback item (Center) -->
+                  <div class="feedback-item feedback-item-center">
+                      <div class="container" style="background: #FFFFFF; box-shadow: 0px 0px 53px #91919129; border-radius: 20px; opacity: 1; padding:15px;">
+                          <div class="row">
+                              <div class="col-md-8">
+                                  <div class="feedback-text mt-md-0 mt-4" style="line-height: 1.5em;">
+                                      <h5 class="color-black" style="text-align: left; letter-spacing: 0px; color: #232932; opacity: 1; margin-left: 10px;">AVP for Innovation, First Abu Dhabi Bank</h5>
+                                      <h5 class="customer-name" style="text-align: left;  letter-spacing: 0px; color: #E97176; opacity: 1; margin-left: 10px;">Salma Al Rafie</h5>
+                                      <p style="color: black; font-weight: lighter; margin-left: 10px; margin-right: 10px;">The delivered platform met all of the client's expectations, especially its well-thought out UI/UX design. Intcore made sure both sides were always on the same page by communicating updates frequently. Customers can expect a trustworthy and tech-savvy partner, who delivers on their promises.</p>
+                                  </div>
+                              </div>
+                              <div class="col-md-4 d-flex justify-content-end align-items-center">
+                                  <img src="assets/img/FAB.jpg" alt="Customer Image" class="img-fluid" style="width: 190px; height: 100%; margin-right: 40px; background: transparent url('img/First_Abu_Dhabi_Bank_Logo.svg.png') 0% 0% no-repeat padding-box;">
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+  
+                  <!-- Third feedback item (Left) -->
+                  <div class="feedback-item feedback-item-left">
+                      <div class="container" style="background: #FFFFFF; box-shadow: 0px 0px 53px #91919129; border-radius: 20px; opacity: 1; padding:15px;">
+                          <div class="row">
+                              <div class="col-md-8">
+                                  <div class="feedback-text mt-md-0 mt-4" style="line-height: 1.5em;">
+                                      <h5 class="color-black" style="text-align: left; letter-spacing: 0px; color: #232932; opacity: 1; margin-left: 10px;">AVP for Innovation, First Abu Dhabi Bank</h5>
+                                      <h5 class="customer-name" style="text-align: left;  letter-spacing: 0px; color: #E97176; opacity: 1; margin-left: 10px;">Salma Al Rafie</h5>
+                                      <p style="color: black; font-weight: lighter; margin-left: 10px; margin-right: 10px;">The delivered platform met all of the client's expectations, especially its well-thought out UI/UX design. Intcore made sure both sides were always on the same page by communicating updates frequently. Customers can expect a trustworthy and tech-savvy partner, who delivers on their promises.</p>
+                                  </div>
+                              </div>
+                              <div class="col-md-4 d-flex justify-content-end align-items-center">
+                                  <img src="assets/img/FAB.jpg" alt="Customer Image" class="img-fluid" style="width: 190px; height: 100%; margin-right: 40px; background: transparent url('img/First_Abu_Dhabi_Bank_Logo.svg.png') 0% 0% no-repeat padding-box;">
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+ 
+
+  
+    
+                    
+  <!-- ======= Grow your business ======= -->   
+  <section id="Grow" class="main d-flex align-items-center background-color:#f2f2f2; "data-aos="fade-up">
+    <div class="container"  style="flex-direction: row-reverse;">
+
+      <h2 class="section-title2 color-black" style="font-weight: bold; color:black;">Are you ready to grow  <br><span style="color: #FA5F6B;">Your Business?</span> <br>
+        <div class="separator"></div>
+        <div class="separator1"></div>
+        <div class="separator2"></div>
+    </h2>
+
+      
+      <div class="row" style="flex-direction: row-reverse;">
+      <div class="col-md-5 order-md-1" data-aos="fade-right">
+        <div class="custom-section" style="margin-bottom: 20px;">
+          <div class="left-align text-left">
+            <img src="assets/img/download (1).png1.png" alt="UAE Flag" class="uae-flag">
+            <span class="bold-text">United Arab Emirates</span>
+          </div>
+          <p class="text-left regular-text mt-4 mb-4 text-black" style="  margin-left:10px; font-weight: 700; color:#151515 ">501 The Binary Tower by Omniyat Business Bay, Dubai</p>
+          <div class="text-left ">
+       
+            <div style="margin-right: 10px; display: inline-block;">
+              <img src="assets/img/7.jpg" alt="Mobile-Number" class="Mobile-Number" style="width: 20%;"> <span>+971529235518</span>
+          </div>
+          <div style="margin-right: 10px; display: inline-block;">
+              <img src="assets/img/8.jpg" alt="Mobile-Number" class="Mobile-Number" style="width: 25%;"> <span>Location</span>
+          </div>
+          <div style="margin-right: 10px; display: inline-block;">
+              <img src="assets/img/9.jpg" alt="Mobile-Number" class="Mobile-Number" style="width: 20%;"> <span>Direct Message</span>
+          </div>
+          
+          </div>
+        </div>
+
+        <div class="custom-section " data-aos="fade-right">
+          <div class="left-align text-left ">
+            <img src="assets/img/egypt.jpg" alt="UAE Flag" class="uae-flag">
+            <span class="bold-text ">Egypt</span>
+          </div>
+          <p class="text-left regular-text mt-4 mb-4 text-black" style="  margin-left:10px; font-weight: 700; color:#151515 ">Villa 79 North Chooueifat, 5th settlement, Cairo</p>
+          <div class="text-left">
+            <div style="margin-right: 10px; display: inline-block;">
+              <img src="assets/img/7.jpg" alt="Mobile-Number" class="Mobile-Number" style="width: 20%;"> <span>+971529235518</span>
+          </div>
+          <div style="margin-right: 10px; display: inline-block;">
+              <img src="assets/img/8.jpg" alt="Mobile-Number" class="Mobile-Number" style="width: 25%;"> <span>Location</span>
+          </div>
+          <div style="margin-right: 10px; display: inline-block;">
+              <img src="assets/img/9.jpg" alt="Mobile-Number" class="Mobile-Number" style="width: 20%;"> <span>Direct Message</span>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="contactSection" class="col-lg-7 p-3 order-md-2" data-aos="fade-up">
+        <div class="bg-grey contact-info border-radius-15 align-items-center justify-content-center py-2 px-1">
+            <div class="col-12">
+                <div class="p-lg-2 p-1">
+                    <form method="POST" action="" data-hs-cf-bound="true">
+                        <div class="form-group row">
+                            <div class="col px-1 p-0 input-icon input-with-icon">
+                                <label for="name" class="form-label text-white"></label>
+                                <div class="input-group" style="border-radius: 25px;">
+                                    <span class="input-group-text" id="name-addon"
+                                        style="border-top-left-radius: 25px; border-bottom-left-radius: 25px; padding: 10px;  color: #FA6773;">
+                                        <i class="fa-solid fa-circle-user"></i>
+                                    </span>
+                                    <input type="text" class="form-control" id="name" name="name"
+                                        placeholder="What is your name?" required="required"
+                                        style="border-radius: 0px 25px 25px 0px;">
+                                </div>
+                            </div>
+                            <div class="col px-1 p-0 input-icon input-with-icon">
+                                <label for="email" class="form-label text-white"></label>
+                                <div class="input-group" style="border-radius: 25px;">
+                                    <span class="input-group-text" id="email-addon"
+                                        style="border-top-left-radius: 25px; border-bottom-left-radius: 25px; padding: 10px;  color: #FA6773;">
+                                        <i class="fa-solid fa-envelope "></i>
+                                    </span>
+                                    <input type="text" class="form-control" id="Phone" name="Phone"
+                                        placeholder="What is your professional email" required="required"
+                                        style="border-radius: 0px 25px 25px 0px;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col px-1 p-0 input-icon input-with-icon">
+                                <label for="Mobile-number" class="form-label text-white"></label>
+                                <div class="input-group" style="border-radius: 25px;">
+                                    <span class="input-group-text" id="mobile-addon"
+                                        style="border-top-left-radius: 25px; border-bottom-left-radius: 25px; padding: 10px; ">
+                                        <img src="assets/img/download (1).png1.png" alt="mobile-number"
+                                            style="width: 20px; height: auto;">
+                                        <span style="color: black; font-size: 15px;"> +971</span>
+                                    </span>
+                                    <input type="text" class="form-control" id="mobile-number" name="mobile-number"
+                                        placeholder="What is your name?" required="required"
+                                        style="border-radius: 0px 25px 25px 0px;">
+                                </div>
+                            </div>
+                            <div class="col px-1 p-0 input-icon input-with-icon">
+                                <label for="budget" class="form-label text-white"></label>
+                                <div class="input-group" style="border-radius: 25px;">
+                                    <span class="input-group-text" id="budget-addon"
+                                        style="border-top-left-radius: 25px; border-bottom-left-radius: 25px; padding: 10px;  color: #FA6773;">
+                                        <i class="fas fa-dollar-sign" id="budget-icon"
+                                            style="cursor: pointer;"></i>
+                                    </span>
+                                    <input type="text" class="form-control" id="Budget" name="Budget"
+                                        placeholder="My Budget is" required="required"
+                                        style="border-radius: 0px 25px 25px 0px;">
+                                    <div class="dropdown" style="display: none;">
+                                        <select name="freeConsultationBudget" id="budget-select" class="form-control">
+                                            <option value="+100,000-USD">+100,000 USD</option>
+                                            <option value="+60,000-USD">+60,000 USD</option>
+                                            <option value="+35,000-USD">+35,000 USD</option>
+                                            <option value="+15,000-USD">+15,000 USD</option>
+                                            <option value="0">undetermined</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-12">
+                                <label for="describe"></label>
+                                <textarea rows="5" name="freeConsultationMessage" id="describe"
+                                    class="form-control custom-textarea"
+                                    placeholder="Like to tell us about your business?"
+                                    style="border-radius: 15px;"></textarea>
+                            </div>
+                        </div>
+                        <div style="margin-top: 20px; margin-right: 5px; text-align: right;">
+                          <button id="submit-button" class="btn2 btn-primary" style="border-radius: 30px; width: 30%; font-size: .8rem; background-color: #E97176;">
+                              <svg class="svg-inline--fa fa-comments fa-shake" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="comments" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" data-fa-i2svg="" style="width: 40px; height: 20px; margin-left: 10px;">
+                                  <path fill="currentColor" d="M208 352c114.9 0 208-78.8 208-176S322.9 0 208 0S0 78.8 0 176c0 38.6 14.7 74.3 39.6 103.4c-3.5 9.4-8.7 17.7-14.2 24.7c-4.8 6.2-9.7 11-13.3 14.3c-1.8 1.6-3.3 2.9-4.3 3.7c-.5 .4-.9 .7-1.1 .8l-.2 .2 0 0 0 0C1 327.2-1.4 334.4 .8 340.9S9.1 352 16 352c21.8 0 43.8-5.6 62.1-12.5c9.2-3.5 17.8-7.4 25.3-11.4C134.1 343.3 169.8 352 208 352zM448 176c0 112.3-99.1 196.9-216.5 207C255.8 457.4 336.4 512 432 512c38.2 0 73.9-8.7 104.7-23.9c7.5 4 16 7.9 25.2 11.4c18.3 6.9 40.3 12.5 62.1 12.5c6.9 0 13.1-4.5 15.2-11.1c2.1-6.6-.2-13.8-5.8-17.9l0 0 0 0-.2-.2c-.2-.2-.6-.4-1.1-.8c-1-.8-2.5-2-4.3-3.7c-3.6-3.3-8.5-8.1-13.3-14.3c-5.5-7-10.7-15.4-14.2-24.7c24.9-29 39.6-64.7 39.6-103.4c0-92.8-84.9-168.9-192.6-175.5c.4 5.1 .6 10.3 .6 15.5z"></path>
+                              </svg>
+                              <span style="color: white; margin-left: 5px; display: inline-block; vertical-align: middle;">Let's Talk</span>
+                          </button>
+                      </div>
+                      
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+
+
+
+
+
+   
+  
+  </main><!-- End #main -->
+
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row"><!-- Removed justify-content-center -->
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-info">
+              <div class="logo me-auto me-lg-0"><img src="assets/img/IntCore.jpg" alt="IntCore"></div>
+              <h4>Intcore offers the "best digital services" for mobile app, web apps development, hosting, DevOps services and performance marketing.</h4>
+              <h4>Developing brands with enthusiasm and purpose.</h4>
+            </div>
+          </div>
+  
+          <div class="col-lg-2 col-md-6 footer-links">
+
+            <h4 class="section-title">
+              Company <br> 
+              <div class="separator3" style=" display: inline-block;border-top: 3px solid #fa6773; width: 6%; margin-left: 3px;"></div>
+              <div class="separator4" style=" display: inline-block;border-top: 3px solid #fa6773; width: 4%;"></div>
+              <div class="separator5" style=" display: inline-block;border-top: 3px solid #fa6773; width: 2%;"></div>
+          </h4>
+
+           
+            <ul>
+              <li></i> <a href="#">Home</a></li>
+              <li></i> <a href="#">About us</a></li>
+              <li> <a href="#">Careers</a></li>
+              <li> <a href="#">Blog & News</a></li>
+            </ul>
+          </div>
+  
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4 class="section-title">
+              Services <br> 
+              <div class="separator3" style=" display: inline-block;border-top: 3px solid #fa6773; width: 3.5%; margin-left: 3px;"></div>
+              <div class="separator4" style=" display: inline-block;border-top: 3px solid #fa6773; width: 2.5%;"></div>
+              <div class="separator5" style=" display: inline-block;border-top: 3px solid #fa6773; width: 1.5%;"></div>
+          </h4>
+            <ul>
+              <li> <a href="#">UI/UX Design</a></li>
+              <li> <a href="#">Mobile App Development</a></li>
+              <li> <a href="#">Web App Development</a></li>
+              <li> <a href="#">Performance Marketing</a></li>
+              <li> <a href="#">Hosting & Servers</a></li>
+            </ul>
+          </div>
+  
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4 class="section-title">
+              Products <br> 
+              <div class="separator3" style=" display: inline-block;border-top: 3px solid #fa6773; width: 3.5%; margin-left: 3px;"></div>
+              <div class="separator4" style=" display: inline-block;border-top: 3px solid #fa6773; width: 2.5%;"></div>
+              <div class="separator5" style=" display: inline-block;border-top: 3px solid #fa6773; width: 1.5%;"></div>
+          </h4>
+            <ul>
+              <li> <a href="#">Events & Ticketing Management App</a></li>
+              <li> <a href="#">CMS Website</a></li>
+              <li> <a href="#">AI Customer support</a></li>
+            </ul>
+  
+            <div class="social-links mt-5">
+              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <footer><!-- Start Footer -->
+      <div class="container">
+        <div class="row justify-content-between align-items-center mt-2 "><!-- Added justify-content-between and align-items-center -->
+          <div class="col-md-6"><!-- Removed text-left class -->
+            <div class="footer-content">
+              <div class="copyright">
+                &copy; Copyright 2024 Intcore L.L.C - All Rights Reserved
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6"><!-- Removed text-right class -->
+            <div class="footer-content">
+              <div class="credits">
+                Police Privacy - Terms & conditions - Contact Us 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer><!-- End Footer -->
+  </footer>
+  
+    
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
