@@ -458,6 +458,9 @@ var controller = new ScrollMagic.Controller();
     centerPadding: '20%',
     slidesToShow: 1,
     dots: true,
+    customPaging: function(slider, i) {
+        return '<span class="custom-dot ">_</span>';
+    },
     responsive: [
         {
             breakpoint: 768,
@@ -481,3 +484,7 @@ var controller = new ScrollMagic.Controller();
 });
 
 
+$('.feedback-slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
+    $('.slick-dots').find('span').removeClass('active');
+    $('.slick-dots').find('span').eq(currentSlide).addClass('active');
+});

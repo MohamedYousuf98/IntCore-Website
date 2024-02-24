@@ -457,6 +457,55 @@ h6 {
 # Main Section
 --------------------------------------------------------------*/
 
+.btn-container {
+  margin-bottom: 20px;
+  margin-right: 20px;
+  text-align: right;
+  margin-top: px;
+}
+
+#submit-button {
+  border-radius: 30px;
+  width: 40%;
+  font-size: 1rem;
+  background-color: #e97176;
+  margin-left: 10px;
+  padding: 10px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+#submit-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    white 0%,
+    white 50%,
+    #e97176 50%,
+    #e97176 100%
+  );
+  transition: left 0.3s ease;
+}
+
+#submit-button:hover::before {
+  left: 0;
+}
+
+#submit-button svg {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+span {
+  color: white;
+  margin-left: 10px;
+}
+
 .main h2 {
   font-weight: bold;
   font-size: 2.4rem;
@@ -1357,7 +1406,7 @@ textarea.form-control7 text {
   margin-left: 10px;
 }
 #Grow {
-  background-color: #f4f4f4;
+  background-color: #fafafa;
 }
 
 /*--------------------------------------------------------------
@@ -1583,4 +1632,9 @@ textarea {
   h2.text-left {
     font-size: 1rem;
   }
+}
+
+.custom-box {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
 }
