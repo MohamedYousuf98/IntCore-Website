@@ -1,10 +1,4 @@
-/**
-* Template Name: Gp
-* Updated: Jan 29 2024 with Bootstrap v5.3.2
-* Template URL: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
 (function() {
   "use strict";
 
@@ -487,4 +481,10 @@ var controller = new ScrollMagic.Controller();
 $('.feedback-slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
     $('.slick-dots').find('span').removeClass('active');
     $('.slick-dots').find('span').eq(currentSlide).addClass('active');
+});
+
+
+
+document.getElementById('submit-button').addEventListener('click', function() {
+  this.classList.toggle('active')
 });

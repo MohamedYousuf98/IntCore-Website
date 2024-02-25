@@ -105,6 +105,19 @@ h6 {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
+
+#header ul li ul {
+  display: none;
+  background-color: #fff;
+  z-index: 1;
+}
+
+#header ul li ul {
+  display: none;
+  background-color: #fff;
+  z-index: 1;
+}
+
 #header ul li ul {
   display: none;
   background-color: #fff;
@@ -125,10 +138,6 @@ h6 {
   text-decoration: none;
 }
 
-#header ul li ul li a:hover {
-  background-color: #fa6773;
-}
-
 #header ul li a {
   padding: 5px 10px;
   margin-right: 10px;
@@ -137,15 +146,6 @@ h6 {
 }
 
 #header ul li.active a {
-  font-weight: bold;
-  color: #fff;
-  border-radius: 20px;
-  background-size: 5px;
-  padding: 10px 10px;
-  background-color: #232932;
-}
-
-#header ul li:hover a {
   font-weight: bold;
   color: #fff;
   border-radius: 20px;
@@ -261,26 +261,6 @@ h6 {
   position: relative;
 }
 
-.navbar a,
-.navbar a:focus {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 0 10px 30px;
-  font-size: 15px;
-  font-weight: 600;
-  color: #fff;
-  white-space: nowrap;
-  transition: 0.3s;
-}
-
-.navbar a i,
-.navbar a:focus i {
-  font-size: 12px;
-  line-height: 0;
-  margin-left: 5px;
-}
-
 .navbar .dropdown ul {
   display: block;
   position: absolute;
@@ -292,7 +272,9 @@ h6 {
   opacity: 0;
   visibility: hidden;
   background: #fff;
-  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* تقليل قيمة الظل الصندوقي */
+
   transition: 0.3s;
 }
 
@@ -308,16 +290,6 @@ h6 {
   font-weight: 400;
 }
 
-.navbar .dropdown ul a i {
-  font-size: 12px;
-}
-
-.navbar .dropdown ul a:hover,
-.navbar .dropdown ul .active:hover,
-.navbar .dropdown ul li:hover > a {
-  color: #fa5f6b;
-}
-
 .navbar .dropdown:hover > ul {
   opacity: 1;
   top: 100%;
@@ -330,23 +302,25 @@ h6 {
   visibility: hidden;
 }
 
-.navbar .dropdown .dropdown:hover > ul {
-  opacity: 1;
-  top: 0;
-  left: 100%;
-  visibility: visible;
-}
-
 @media (max-width: 1366px) {
   .navbar .dropdown .dropdown ul {
     left: -90%;
   }
 
-  .navbar .dropdown .dropdown:hover > ul {
+  .navbar.dropdown.dropdown > ul {
     left: -100%;
   }
 }
 
+.dropdown-content li a {
+  color: #ffffff !important;
+}
+.dropdown-content li a {
+  color: #ffffff;
+}
+.dropdown ul li:not(:last-child) {
+  border-bottom: 1px solid #707070;
+}
 /**
 * Mobile Navigation 
 */
@@ -398,25 +372,6 @@ h6 {
   background-color: #fff;
   overflow-y: auto;
   transition: 0.3s;
-}
-
-.navbar-mobile a,
-.navbar-mobile a:focus {
-  padding: 10px 20px;
-  font-size: 15px;
-  color: #151515;
-}
-
-.navbar-mobile a:hover,
-.navbar-mobile .active,
-.navbar-mobile li:hover > a {
-  color: #151515;
-  background-color: #fa5f6b;
-}
-
-.navbar-mobile .getstarted,
-.navbar-mobile .getstarted:focus {
-  margin: 15px;
 }
 
 .navbar-mobile .dropdown ul {
@@ -503,9 +458,6 @@ h6 {
   transition: background-color 0.3s ease;
 }
 
-.custom-button:hover {
-  background-color: #45a049;
-}
 .stats-item img {
   margin-top: 50px;
   max-height: 100px;
@@ -768,7 +720,7 @@ h1 {
 
 @media only screen and (max-width: 600px) {
   .red-underline h2 {
-    display: block; /* جعل العنصر يظهر في سطر لوحده */
+    display: block;
   }
 }
 /*
@@ -805,18 +757,18 @@ h1 {
   width: 100px;
   height: 100px;
 
-  animation: zoomIn 1.5s ease;
+  animation: fade-up 1.5s ease;
   animation-delay: 0.5s;
   margin-right: 40px;
 }
 
 .vertical-line {
-  border-left: 2px solid gray;
+  border-left: 2px solid #707070;
   height: 140px;
 }
 .container > .row > .col-md-9 > .d-flex {
   border-radius: 5vw;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
   padding: 20px;
 }
 .img-fluid.image {
@@ -887,8 +839,8 @@ h1 {
 }
 
 .client-logo {
-  opacity: 0; /* Initially set opacity to 0 */
-  animation: fadeIn 1s ease-in-out forwards; /* Apply animation to fade in */
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
 }
 body,
 html {
@@ -900,7 +852,7 @@ html {
 .bg-red img {
   background-color: #ffffff;
   border-radius: 20px;
-  padding: 25px; /* optional: add padding for better appearance */
+  padding: 25px;
 }
 .custom-padding {
   padding: 10px;
@@ -1758,7 +1710,7 @@ footer {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to right, transparent, #ffffff);
+
   transition: left 0.8s;
   z-index: 1;
 }
@@ -1766,7 +1718,28 @@ footer {
 #submit-button:hover::before {
   left: 0;
 }
+#submit-button {
+  border-radius: 30px;
+  width: 40%;
+  font-size: 1rem;
+  background-color: #e97176;
+  margin-left: 10px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
 
+#submit-button span {
+  margin-right: 10px;
+  margin-left: 10px;
+  display: inline-block;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+#submit-button svg {
+  fill: #fff;
+}
 .btn5 {
   transition: color 0.3s, background-position 0.8s;
 }
@@ -1810,7 +1783,7 @@ footer {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to right, transparent, #e97176);
+
   transition: left 0.8s;
   z-index: 1;
 }
@@ -1826,4 +1799,74 @@ footer {
 
 .btn5:not(:has(img)):hover {
   color: white;
+}
+.btn2 {
+  position: relative;
+  overflow: hidden;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 20px;
+  z-index: 1;
+}
+
+.btn2 span {
+  position: relative;
+  z-index: 2;
+  transition: color 0.3s ease;
+}
+.btn2 svg {
+  position: relative;
+  z-index: 2;
+  transition: color 0.3s ease;
+}
+
+.btn2:before,
+.btn2:after {
+  content: "";
+  position: absolute;
+  background-color: #fff; /* تغيير اللون هنا */
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: -100%;
+  transition: left 0.5s ease;
+  z-index: 0;
+}
+
+.btn2:after {
+  background-color: transparent;
+  left: 100%;
+  transition: left 0.5s ease;
+}
+
+.btn2.active:before {
+  left: 0;
+}
+
+.btn2.active:after {
+  left: 0;
+}
+
+#submit-button:hover span {
+  color: #e97176;
+}
+#submit-button:hover svg {
+  color: #e97176;
+}
+#submit-button svg path {
+  fill: currentColor;
+  transition: fill 0.3s ease;
+}
+
+#submit-button.active svg path {
+  fill: #ffffff;
+}
+
+#submit-button.active span {
+  color: #ffffff;
+}
+#submit-button:hover {
+  outline: 2px solid #e97176;
 }

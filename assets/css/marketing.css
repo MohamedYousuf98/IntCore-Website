@@ -1,0 +1,519 @@
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+}
+
+/*--------------------------------------------------------------
+  # Back to top button
+  --------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: #fa6773;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  transition: all 0.4s;
+}
+
+.back-to-top i {
+  font-size: 28px;
+  color: #151515;
+  line-height: 0;
+}
+
+.back-to-top:hover {
+  background: #151515;
+}
+
+.back-to-top:hover i {
+  color: #fa6773;
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*--------------------------------------------------------------
+  # Preloader
+  --------------------------------------------------------------*/
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background: #21252c;
+}
+
+#preloader:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 0px);
+  left: calc(50% - 30px);
+  border: 6px solid #fa6773;
+  border-top-color: #21252c;
+  border-bottom-color: #21252c;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: animate-preloader 1s linear infinite;
+}
+
+@keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*--------------------------------------------------------------
+  # Disable aos animation delay on mobile devices
+  --------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+  [data-aos-delay] {
+    transition-delay: 0 !important;
+  }
+}
+
+/*--------------------------------------------------------------
+  # Header
+  --------------------------------------------------------------*/
+#header ul li ul {
+  display: none;
+  background-color: #fff;
+
+  z-index: 1;
+}
+
+#header ul li:hover ul {
+  display: block;
+}
+
+#header ul li ul li {
+  padding: 10px;
+}
+
+#header ul li ul li a {
+  color: #000;
+  text-decoration: none;
+}
+
+#header ul li a {
+  padding: 5px 10px;
+  margin-right: 10px;
+  color: white;
+  font-weight: lighter;
+}
+
+#header ul li.active a {
+  font-weight: bold;
+  color: #fff;
+  border-radius: 20px;
+  background-size: 5px;
+  padding: 10px 10px;
+  background-color: #232932;
+}
+
+#header ul li ul li a {
+  margin: 5px 0;
+}
+
+#header.header-scrolled,
+#header.header-inner-pages {
+  background: #21252c;
+}
+
+#header .logo {
+  font-size: 32px;
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+#header .logo a {
+  color: #fff;
+}
+
+#header .logo a span {
+  color: #fa6773;
+}
+
+#header .logo img {
+  max-height: 55px;
+}
+
+#navbar {
+  border-radius: 12px;
+  padding: 20px;
+  margin-right: 0 20px;
+}
+
+#header ul {
+  border-radius: 50px;
+  background-size: 50px;
+  color: white;
+  padding: 5px;
+
+  align-items: center;
+}
+
+#header ul li {
+  margin-right: 10px;
+}
+#header ul li.active a {
+  background-color: #232932;
+  padding: 5px 10px;
+}
+
+/*--------------------------------------------------------------
+  #  Contact Us Button
+  --------------------------------------------------------------*/
+.ContactUs-btn {
+  color: #ffffff;
+  border-radius: 50px;
+  padding: 4px 20px 4px 20px;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 16px;
+  display: inline-block;
+  border: 4px solid #e97176;
+  background-color: #e97176;
+}
+
+@media (max-width: 992px) {
+  .ContactUs {
+    padding: 4px 10px 4px 10px;
+  }
+}
+
+.phone-btn {
+  color: #ffffff;
+  padding: 7px 25px 8px 25px;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 14px;
+  display: inline-block;
+}
+
+/*--------------------------------------------------------------
+  # Navigation Menu
+  --------------------------------------------------------------*/
+/**
+  * Desktop Navigation 
+  */
+.navbar {
+  padding: 10;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  background-color: #202020;
+  background-size: 50%;
+}
+
+.navbar li {
+  position: relative;
+}
+
+.navbar a,
+.navbar a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0 10px 30px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+
+.navbar a i,
+.navbar a:focus i {
+  font-size: 12px;
+  line-height: 0;
+  margin-left: 5px;
+}
+
+.navbar .dropdown ul {
+  display: block;
+  position: absolute;
+  left: 14px;
+  top: calc(100% + 30px);
+  margin: 0;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  background: #fff;
+
+  transition: 0.3s;
+}
+
+.navbar .dropdown ul li {
+  min-width: 200px;
+}
+
+.navbar .dropdown ul a {
+  padding: 10px 20px;
+  font-size: 14px;
+  text-transform: none;
+  color: #151515;
+  font-weight: 400;
+}
+
+.navbar .dropdown ul a i {
+  font-size: 12px;
+}
+
+.navbar .dropdown:hover > ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+}
+
+.navbar .dropdown .dropdown ul {
+  top: 0;
+  left: calc(100% - 30px);
+  visibility: hidden;
+}
+
+.navbar .dropdown .dropdown:hover > ul {
+  opacity: 1;
+  top: 0;
+  left: 100%;
+  visibility: visible;
+}
+
+@media (max-width: 1366px) {
+  .navbar .dropdown .dropdown ul {
+    left: -90%;
+  }
+
+  .navbar .dropdown .dropdown:hover > ul {
+    left: -100%;
+  }
+}
+
+/**
+  * Mobile Navigation 
+  */
+.mobile-nav-toggle {
+  color: #fff;
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+  line-height: 0;
+  transition: 0.5s;
+}
+
+@media (max-width: 991px) {
+  .mobile-nav-toggle {
+    display: block;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+}
+
+.navbar-mobile {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+
+  transition: 0.3s;
+  z-index: 999;
+}
+
+.navbar-mobile .mobile-nav-toggle {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.navbar-mobile ul {
+  display: block;
+  position: absolute;
+  top: 55px;
+  right: 15px;
+  bottom: 15px;
+  left: 15px;
+  padding: 10px 0;
+  background-color: #fff;
+  overflow-y: auto;
+  transition: 0.3s;
+}
+
+.navbar-mobile a,
+.navbar-mobile a:us {
+  padding: 10px 20px;
+  font-size: 15px;
+  color: #151515;
+}
+
+.navbar-mobile a:hover,
+.navbar-mobile .active,
+.navbar-mobile li:hover > a {
+  color: #151515;
+  background-color: #fa5f6b;
+}
+
+.navbar-mobile .getstarted,
+.navbar-mobile .getstarted:focus {
+  margin: 15px;
+}
+
+.navbar-mobile .dropdown ul {
+  position: static;
+  display: none;
+  margin: 10px 20px;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 1;
+  visibility: visible;
+  background: #151515;
+}
+
+.navbar-mobile .dropdown ul li {
+  min-width: 200px;
+}
+
+.navbar-mobile .dropdown ul a {
+  padding: 10px 20px;
+  color: #151515;
+}
+
+.navbar-mobile .dropdown ul a i {
+  font-size: 12px;
+}
+
+.navbar-mobile .dropdown > .dropdown-active {
+  display: block;
+}
+
+/*--------------------------------------------------------------
+# Marketing Section
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Revenues Section
+--------------------------------------------------------------*/
+
+.Revenues {
+  background: #f4f4f4 0% 0% no-repeat padding-box;
+  border-radius: 50px 50px 0px 0px;
+}
+.Revenues {
+  position: relative;
+  z-index: 1;
+  margin-top: -10vh;
+  min-height: 100vh;
+}
+
+.icon-link {
+  color: #ffffff;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.icon-link {
+  margin-right: 15px;
+}
+
+span {
+  margin-right: 15px;
+  color: #ffffff;
+}
+.Revenues .section-title p {
+  text-align: left;
+  font-family: normal normal normal 18px/40px Helvetica Neue;
+  letter-spacing: 0px;
+  color: gray;
+  opacity: 1;
+  line-height: 2;
+}
+.Revenues .black-text {
+  color: #232932;
+  line-height: 2;
+  font-size: 14px;
+}
+
+.box {
+  height: 182px;
+  background: #ffffff;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+}
+.box img {
+  width: auto;
+  height: 60%;
+  padding: 15px;
+  margin-left: 15px;
+
+  margin-bottom: 20px;
+}
+.box-content {
+  flex: 1; /* Allow content to take remaining space */
+}
+
+.box h2 {
+  text-align: left;
+  font-size: 16px;
+  font-weight: bold;
+  color: #e97176;
+
+  margin-top: 20px;
+  margin-left: 30px;
+}
+.box-content p {
+  text-align: left;
+  font-family: normal normal normal 14px/25px Helvetica Neue;
+  text-decoration: none;
+  letter-spacing: 0px;
+  color: #363636;
+  text-transform: capitalize;
+  line-height: 2;
+  opacity: 1;
+  font-size: 10px;
+}
