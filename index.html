@@ -65,7 +65,8 @@
          
           <div class="logo text-center"><img src="assets/img/IntCore.jpg" alt="IntCore"></div>
       </div>
-      
+     
+        
     
     <nav id="navbar" class="navbar order-last order-lg-0 p-70 mr-5">
       <ul>
@@ -113,28 +114,45 @@
       <div class="col-lg-6 order-1 order-lg-1 d-flex flex-column justify-content-center">
        
      
-        <h2 class="text-left text-white mb-3 d-lg-block" data-aos="fade-up" data-aos-duration="1000" style="font-weight: bold; font-size: 2.4rem; margin-top: .9rem; color:#ffffff">Be a Part of <span class="red-underline">Our Success Stories</span> <br class="mobile-only"> <span class="red-underline"></span></h2>
-        <h5 class="text-left text-white mb-4" data-aos="fade-up" data-aos-duration="1000" style="font-size: 1.5rem; margin-top: .2rem; font-weight: lighter; color:#ffffff">
+        <h2 class="text-left text-white mb-3 d-lg-fixed" data-aos="fade-up" data-aos-duration="1000" style="font-weight: bold; font-size: 2.4rem;  color:#ffffff">Be a Part of <span class="red-underline">Our Success Stories</span> <br class="mobile-only"> <span class="red-underline"></span></h2>
+        <h2 id="mobile-only-heading" class="text-left text-white mb-3 d-lg-fixed" data-aos="fade-up" data-aos-duration="1000" style="font-weight: bold; font-size: 2.1rem; color:#ffffff">Be a Part of <span class="red-underline"> <br>Our Success Stories</span> <br class="mobile-only"> <span class="red-underline"></span></h2>
+
+<style>
+
+@media only screen and (min-width: 601px) {
+  #mobile-only-heading {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #mobile-only-heading {
+    display: block;
+  }
+}
+</style>
+
+
+        <h5 class="text-left text-white mb-4 mt-lg-2" data-aos="fade-up" data-aos-duration="1000" style="font-size: 1.5rem; margin-top: .2rem; font-weight: lighter; color:#ffffff">
           IntCore is
         </h5>
         <p class="text-left text-white mb-2" data-aos="fade-up" data-aos-duration="1000" style="font-size: 1.2rem; font-weight: lighter;color:#ffffff ">
          Best digital service company in Dubai, providing website <br> development, mobile app development, UI/UX design, digital <br>marketing, and more...
         </p>
         
-        <div class="text-left">
-          <button class="btn1 btn-primary creative-btn1 mb-5 mb-lg-4" data-aos="fade-up" data-aos-duration="1000" style=" font-size: 15px; margin-top: 25px; border: none; color:#E97176; width:30%; margin-right: 20px;">
+        <div class="text-left mt-2">
+          <button class="btn1 btn-primary creative-btn1 mb-5 mb-lg-0" data-aos="fade-up" data-aos-duration="1000" style=" font-size: 15px; margin-top: 30px; border: none; color:#E97176; width:35%; margin-right: 20px;">
             Get Quotation <img src="assets/img/FontAwsome (angle-double-right).png"style=" margin-left:5px;" alt="">
           </button>
         </div>
         
       
-        <div class="row gy-4" data-aos="fade-up" data-aos-duration="1000">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <div class="stats-item text-center mb-6 mb-lg-4">
+        <div class="row gy-4 mt-3 mb-lg-4" data-aos="fade-up" data-aos-duration="1000">
+          <div class="col-lg-12 d-flex justify-content-center mt-3 mt-lg-4">
+            <div class="stats-item text-center mb-6 mb-lg-4 ">
               <img src="assets/img/Image 1@2x.png" class="img-fluid" alt="Clients Image">
             </div>
-          </div>
-       
+          </div>         
         </div>
       </div>
       <div class="col-lg-5 order-2 order-lg-1 hero-img" data-aos="fade-up" data-aos-duration="1000">
@@ -189,30 +207,20 @@
               </svg>
               <span>Let's Talk</span>
             </button>
-            
-            
-              
-              
-              
-              
-              
-              
-              
           </div>
-          
               </button>
           </div>        
-</div>     
+</div> 
             </div>
           </div>
         </div>
-     
 </section>
 
 
 
 
-  <div id="experience-section" class="container-fluid">
+<div id="experience-section" class="container-fluid mobile-hidden">
+
     <div class="row no-gutters"> 
       <div class="col-md-9 mx-auto">
         <div class="rounded-container p-"> 
@@ -224,11 +232,14 @@
             <div class="vertical-line mx-3 animated-content "></div>
             <div class="col-md-6 align-self-center animated-content" style="width: 75%;"> 
               <div class="img-container p-2">
-                <img src="assets/img/1.5.png" alt="Image 1" class="img-fluid mb-2"style="margin-bottom: 10px !important; margin-right: 15px;width:11%  ">
-                <img src="assets/img/2.5.png" alt="Image 2" class="img-fluid mb-2  " style="margin-bottom: 10px !important; margin-right: 15px; width:15%"> 
-                <img src="assets/img/clutche.png" alt="Image 3" class="img-fluid mb-2" style="margin-bottom: 10px !important; margin-right: 15px;"> 
-                <img src="assets/img/4.50.png" alt="Image 4" class="img-fluid mb-2" style="margin-bottom: 10px !important; margin-right: 15px; width:15%"> 
-                <img src="assets/img/5.5.png" alt="Image 5" class="img-fluid mb-2" style="margin-bottom: 10px !important; margin-right: 15px; width:11%"> 
+               
+                <img src="assets/img/1.5.png" alt="Image 1" class="img-fluid mb-2  " style="margin-bottom: 10px !important; margin-right: 15px; width:13%"> 
+                <img src="assets/img/2.5.png" alt="Image 2" class="img-fluid mb-2" style="margin-bottom: 10px !important; margin-right: 15px; width:10%"> 
+                <img src="assets/img/clutche.png" alt="Image 3" class="img-fluid mb-2" style="margin-bottom: 10px !important; margin-right: 15px; width:13%"> 
+                <img src="assets/img/4.50.png" alt="Image 4" class="img-fluid mb-2"style="margin-bottom: 10px !important; margin-right: 15px;width:13%  ">
+                
+                <img src="assets/img/5.5.png" alt="Image 5" class="img-fluid mb-2" style="margin-bottom: 10px !important; margin-right: 15px; width:13%"> 
+                
               </div>
             </div>
           </div>
@@ -237,7 +248,55 @@
     </div>
   </div>
 
+ 
 
+<div id="desktop-hidden" class="container-fluid desktop-hidden">
+    <div class="row no-gutters"> 
+        <div class="col-md-9 mx-auto">
+            <div class="rounded-container p-"> 
+                <div class="d-flex align-items-center justify-content-center">
+                    <div class="mr-md-0 text-center animated-content" style="width: 100%; margin-left: 15px;"> 
+                        <h1 class="animated-plus-ten">10+</h1>
+                        <h2 class="years-experience">Years Experience With Global Awards</h2>
+                    </div>
+                </div>
+                <div class="seprator"></div>
+                <div class="img-container p-2">
+                    <img src="assets/img/1.5.png" alt="Image 1" class="img-fluid mb-2 " style=" width: 23%; ">
+                    <img src="assets/img/clutche.png" alt="Image 3" class="img-fluid mb-2" style="width:20%;"> 
+                    <img src="assets/img/5.5.png" alt="Image 2" class="img-fluid mb-2"style="width:23%; "> 
+                    <img src="assets/img/4.50.png" alt="Image 4" class="img-fluid mb-2 "style="width: 28%;"> 
+                    <img src="assets/img/2.5.png" alt="Image 5" class="img-fluid mb-2"style="width: 28%;"> 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+  
+  
+  <style>
+@media only screen and (min-width: 601px) {
+  #desktop-hidden {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #desktop-hidden {
+    display: block;
+  }
+}
+</style>
+  
+
+  
+  
+  
+
+
+
+  
 
 <!-- ======= Helping Section ======= -->
 <section id="help" class="helps">
@@ -309,26 +368,30 @@
     
       <!-- ======= Brands Section ======= -->
       
-     <section class="my-1 py-lg-5 py-3" style="background: transparent url('assets/img/brands.png') 0% 0% no-repeat padding-box;
-opacity: 1;">
 
-    <div class="container" data-aos="fade-up" data-aos-duration="1000">
-      <div class="row">
-        <div class="col-12">
-          <div class="sectionHeading text-left ">
-            <h2 class="section-title" style=" font-size: 2rem;">
-              <h2 class="section-title2 color-black" style="font-weight: bold; color:black;">How many brands  <br><span style="color: #FA5F6B;">Trusted IntCore?</span></h2>
-                <div class="separator"></div>
-                <div class="separator1"></div>
-                <div class="separator2"></div>
+  
+  <section class="my-1 py-lg-5 py-3" style="background: transparent url('assets/img/brands.png') 0% 0% no-repeat padding-box; opacity: 1;">
+      <div class="container" data-aos="fade-up" data-aos-duration="1000">
+        <div class="row">
+          <div class="col-12">
+            <div class="sectionHeading text-left ">
+          
+              <h2 class="section-title" style="font-size: 2rem;">How many brands <br><span style="color: #FA5F6B;">Trusted IntCore?</span>
+              
+              <div class="separator"></div>
+              <div class="separator1"></div>
+              <div class="separator2"></div>
             </h2>
-    </div>
-  </h2>
-</div>
-</div> 
+            </div>
+          </div>
+        </div>
+      </div>
+  
+  
+   
 <div class="container">
   <div class="row">
-    <div class="col-md-2"  data-aos="fade-up" data-aos-duration="1000">
+    <div class="col-md-2 "  data-aos="fade-up" data-aos-duration="1000">
       <div class="client-box-shadow p-lg-3 p-1">
         <img src="assets/img/Clients/1.PNG" alt="Image 1" title="Image 1" class="img-fluid grey-hovarable">
       </div>
@@ -478,9 +541,9 @@ opacity: 1;">
   </div>
 </div>
 
-<div class="container-fluid mt-2 pt-4 px-md-5" data-aos="fade-up" data-aos-duration="1000">
+<div class="container-fluid mt-2 pt-4 px-md-5">
   <div class="row align-items-center justify-content-center">
-    <div class="col-md-9"> 
+    <div class="col-md-7"> 
       <div class="border-dark p-2 ml-4 d-flex justify-content-start align-items-center bg-black rounded-4 custom-padding custom-margin">
         <p class="text-left mt-3 text-light me-3" style="margin-left: 10%; text-align: center;
         font: normal normal bold 16px/22px Helvetica;
@@ -489,25 +552,28 @@ opacity: 1;">
         opacity: 1;">Need more information?</p>
         <div class="text-center mx-auto"> 
        
-          <div class="d-inline-block me-2">
-            <a href="#" class="btn5 btn3-sm p-2 mr-5" style="background-color: white; color:#E97176; border-radius: 20px; display: inline-block; font-weight: bold;">
-              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="28.333" viewBox="0 0 22 29.333" style="margin-right: 10px; margin-left:10px; ">
+          <div class="d-inline-block">
+            <a href="#" class="btn5 btn3-sm p-2 mr-5" style="background-color: white; color:#E97176; border-radius: 20px; display: inline-block; font-weight: bold; margin-top: 5px; min-width: 200px; text-align: center;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="28.333" viewBox="0 0 22 29.333" style="margin-right: 10px; margin-left:10px; vertical-align: middle;">
                 <path id="pdf" d="M10.421,14.672a5.528,5.528,0,0,1-.115-2.687C10.788,11.985,10.742,14.1,10.421,14.672Zm-.1,2.7A26.436,26.436,0,0,1,8.7,20.969a21.1,21.1,0,0,1,3.6-1.255,7.421,7.421,0,0,1-1.977-2.337Zm-5.391,7.15c0,.046.756-.309,2-2.3A7.919,7.919,0,0,0,4.933,24.527Zm9.276-15.36H22V27.958a1.372,1.372,0,0,1-1.375,1.375H1.375A1.372,1.372,0,0,1,0,27.958V1.375A1.372,1.372,0,0,1,1.375,0H12.833V7.792A1.379,1.379,0,0,0,14.208,9.167Zm-.458,9.843A5.75,5.75,0,0,1,11.3,15.927a8.235,8.235,0,0,0,.355-3.678,1.435,1.435,0,0,0-2.739-.39,9.526,9.526,0,0,0,.464,4.411,53.8,53.8,0,0,1-2.337,4.916c-.006,0-.006.006-.011.006-1.553.8-4.217,2.549-3.122,3.9a1.78,1.78,0,0,0,1.232.573c1.026,0,2.045-1.031,3.5-3.541a32.657,32.657,0,0,1,4.526-1.329,8.683,8.683,0,0,0,3.667,1.117,1.483,1.483,0,0,0,1.129-2.486C17.17,18.643,14.856,18.866,13.75,19.009ZM21.6,6.016,15.984.4A1.374,1.374,0,0,0,15.01,0h-.344V7.333H22V6.984A1.371,1.371,0,0,0,21.6,6.016ZM17.354,20.642c.235-.155-.143-.682-2.452-.516C17.027,21.032,17.354,20.642,17.354,20.642Z" fill="#e97176"/>
-              </svg>   Download Profile 
+              </svg> Download Profile
             </a>
           </div>
           
-         
           <div class="d-inline-block">
-            <a href="#" class="btn5 btn3-sm p-2 mr-5" style="background-color: #E97176; color:white; border-radius: 20px; display: inline-block;font-weight: bold;  ">
-              <img src="assets/img/req.jpg" alt="Profile Image" style="width: 20px; height: 27px; margin-right: 10px;margin-left: 10px; color:white; "> Request Meeting  
+            <a href="#" class="btn5 btn3-sm p-2 mr-5" style="background-color: #E97176; color:white; border-radius: 20px; display: inline-block;font-weight: bold; min-width: 200px; text-align: center;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="28.333" viewBox="0 0 21 24" style="margin-right: 10px; margin-left:10px; vertical-align: middle;">
+                <path id="request_meet" data-name="request meet" d="M20.438,7.5H.563A.563.563,0,0,1,0,6.938V5.25A2.25,2.25,0,0,1,2.25,3H4.5V.563A.563.563,0,0,1,5.063,0H6.938A.563.563,0,0,1,7.5.563V3h6V.563A.563.563,0,0,1,14.063,0h1.875A.563.563,0,0,1,16.5.563V3h2.25A2.25,2.25,0,0,1,21,5.25V6.938A.563.563,0,0,1,20.438,7.5ZM.563,9H20.438A.563.563,0,0,1,21,9.563V21.75A2.25,2.25,0,0,1,18.75,24H2.25A2.25,2.25,0,0,1,0,21.75V9.563A.563.563,0,0,1,.563,9Zm15.623,4.5-1.32-1.331a.562.562,0,0,0-.8,0L9.1,17.094,6.944,14.921a.563.563,0,0,0-.8,0l-1.331,1.32a.562.562,0,0,0,0,.8l3.872,3.9a.562.562,0,0,0,.8,0l6.7-6.647a.562.562,0,0,0,0-.8Z" fill="#fff"/>
+              </svg> Request Meeting
             </a>
           </div>
+          
         </div>
       </div>
     </div>
   </div>
 </div>
+
 
 </section>
              
@@ -515,95 +581,96 @@ opacity: 1;">
 
    <!-- ======= Promising Section ======= -->
    
-
    <section class="bg-gray my-1 py-lg-5 py-3" style="background-color: #202228;">
-    <div class="container " data-aos="fade-up">
-        <div class="sectionHeading text-left ">
-            <h2 class="section-title2 color-black" style="font-weight: bold; color:#E97176;">What we are <br><span style="color: white;">Promising You?</span> <br>
-                <div class="separator"></div>
-                <div class="separator1"></div>
-                <div class="separator2"></div>
-            </h2>
-        </div>
-
-        <div class="container-fluid mt-4">
-    <div class="row justify-content-center">
-      <!-- Box 1 -->
-      <div class="col-lg-2" data-aos="fade-up" data-aos-duration="1000">
-        <div class="custom-box p-1 mt-2 mb-2">
-          <!-- Box Content -->
-          <div class="shadow bg-white radius-15 d-flex flex-column align-items-center justify-content-center p-2" style="background: #FFFFFF; width:100%; border-radius: 18px; opacity: 1; height: 100%;">
-            <img src="assets/img/1.png" alt="Software apps Delivery on time" title="Delivery on time" class="img-fluid rounded-circle mb-3" style=" background: transparent url('img/Group 25734.png') 0% 0% no-repeat padding-box; opacity: 1; top: 3544px; left: 445px; width: 201px; height: 89px; padding: 7px;">
-            <div class="text-center" style="top: 3670px; left: 465px; width: 163px; height: 40px;  color: #222933; opacity: 1; margin-bottom: 25px;">
-              <h5>Commitment <br>on time</h5>
+    <div class="container" data-aos="fade-up">
+      <div class="sectionHeading text-left">
+        <h2 class="section-title" style="font-size: 2rem; color:#FA5F6B;">What we are <br><span style="color: #ffffff;">Promising You?</span>
+              
+          <div class="separator"></div>
+          <div class="separator1"></div>
+          <div class="separator2"></div>
+        </h2>
+      </div>
+  
+      <div class="container-fluid mt-4">
+        <div class="row justify-content-center">
+          <!-- Box 1 -->
+          <div class="col-lg-2 col-md-9 col-6" data-aos="fade-up" data-aos-duration="1000">
+            <div class="custom-box p-1 mt-2 mb-2">
+              <!-- Box Content -->
+              <div class="shadow bg-white radius-15 d-flex flex-column align-items-center justify-content-center p-2" style="background: #FFFFFF; width:100%; border-radius: 18px; opacity: 1; height: 100%;">
+                <img src="assets/img/1.png" alt="Software apps Delivery on time" title="Delivery on time" class="img-fluid rounded-circle mb-3" style="background: transparent url('img/Group 25734.png') 0% 0% no-repeat padding-box; opacity: 1; width: 100%; max-width: 200px; height: auto; padding: 7px; margin-top: 20px;">
+                <div class="text-center" style="color: #222933; opacity: 1; margin-bottom: 25px;">
+                  <h5>Commitment <br>on time</h5>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-      <!-- Box 2 -->
-      <div class="col-lg-2" data-aos="fade-up" data-aos-duration="1000">
-        <div class="custom-box p-1 mt-2 mb-2">
-          <!-- Box Content -->
-          <div class="shadow bg-white radius-15 d-flex flex-column align-items-center justify-content-center p-2" style="background: #FFFFFF; width:100%; border-radius: 18px; opacity: 1; height: 100%;">
-            <img src="assets/img/222.png" alt="Money Back Guarantee" title="Money Back Guarantee" class="img-fluid rounded-circle mb-3" style=" background: transparent url('img/Group 25734.png') 0% 0% no-repeat padding-box; opacity: 1; top: 3544px; left: 445px; width: 201px; height: 89px; padding: 7px;">
-            <div class="text-center" style="top: 3670px; left: 465px; width: 163px; height: 40px;  text-align: center;  color: #222933; opacity: 1; margin-bottom: 25px;">
-              <h5>Money Back Guarantee</h5>
+          <!-- Box 2 -->
+          <div class="col-lg-2 col-md-9 col-6" data-aos="fade-up" data-aos-duration="1000">
+            <div class="custom-box p-1 mt-2 mb-2">
+              <!-- Box Content -->
+              <div class="shadow bg-white radius-15 d-flex flex-column align-items-center justify-content-center p-2" style="background: #FFFFFF; width:100%; border-radius: 18px; opacity: 1; height: 100%;">
+                <img src="assets/img/222.png" alt="Money Back Guarantee" title="Money Back Guarantee" class="img-fluid rounded-circle mb-3" style="background: transparent url('img/Group 25734.png') 0% 0% no-repeat padding-box; opacity: 1; width: 100%; max-width: 200px; height: auto; padding: 7px; margin-top: 20px;">
+                <div class="text-center" style="color: #222933; opacity: 1; margin-bottom: 25px;">
+                  <h5>Money Back Guarantee</h5>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-      <!-- Box 3 -->
-      <div class="col-lg-2" data-aos="fade-up" data-aos-duration="1000">
-        <div class="custom-box p-1 mt-2 mb-2">
-          <!-- Box Content -->
-          <div class="shadow bg-white radius-15 d-flex flex-column align-items-center justify-content-center p-2" style="background: #FFFFFF; width:100%; border-radius: 18px; opacity: 1; height: 100%;">
-            <img src="assets/img/3.png" alt="Effective Partnerships" title="Effective Partnerships" class="img-fluid rounded-circle mb-3" style=" background: transparent url('img/Group 25734.png') 0% 0% no-repeat padding-box; opacity: 1; top: 3544px; left: 445px; width: 201px; height: 89px; padding: 7px;">
-            <div class="text-center" style="top: 3670px; left: 465px; width: 163px; height: 40px;  text-align: center;  letter-spacing: 0px; color: #222933; opacity: 1; margin-bottom: 25px;">
-              <h5>Effective Partnerships</h5>
+          <!-- Box 3 -->
+          <div class="col-lg-2 col-md-9 col-6" data-aos="fade-up" data-aos-duration="1000">
+            <div class="custom-box p-1 mt-2 mb-2">
+              <!-- Box Content -->
+              <div class="shadow bg-white radius-15 d-flex flex-column align-items-center justify-content-center p-2" style="background: #FFFFFF; width:100%; border-radius: 18px; opacity: 1; height: 100%;">
+                <img src="assets/img/3.png" alt="Effective Partnerships" title="Effective Partnerships" class="img-fluid rounded-circle mb-3" style="background: transparent url('img/Group 25734.png') 0% 0% no-repeat padding-box; opacity: 1; width: 100%; max-width: 200px; height: auto; padding: 7px; margin-top: 20px;">
+                <div class="text-center" style="color: #222933; opacity: 1; margin-bottom: 25px;">
+                  <h5>Effective Partnerships</h5>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-      <!-- Box 4 -->
-      <div class="col-lg-2" data-aos="fade-up" data-aos-duration="1000">
-        <div class="custom-box p-1 mt-2 mb-2">
-          <!-- Box Content -->
-          <div class="shadow bg-white radius-15 d-flex flex-column align-items-center justify-content-center p-2" style="background: #FFFFFF; width:100%; border-radius: 18px; opacity: 1; height: 100%;">
-            <img src="assets/img/5.png" alt="Expert Consultation" title="Expert Consultation" class="img-fluid rounded-circle mb-3" style=" background: transparent url('img/Group 25734.png') 0% 0% no-repeat padding-box; opacity: 1; top: 3544px; left: 445px; width: 201px; height: 89px; padding: 7px;">
-            <div class="text-center" style="top: 3670px; left: 465px; width: 163px; height: 40px;   text-align: center;  color: #222933; opacity: 1; margin-bottom: 25px;">
-              <h5>Expert Consultation</h5>
+          <!-- Box 4 -->
+          <div class="col-lg-2 col-md-9 col-6" data-aos="fade-up" data-aos-duration="1000">
+            <div class="custom-box p-1 mt-2 mb-2">
+              <!-- Box Content -->
+              <div class="shadow bg-white radius-15 d-flex flex-column align-items-center justify-content-center p-2" style="background: #FFFFFF; width:100%; border-radius: 18px; opacity: 1; height: 100%;">
+                <img src="assets/img/5.png" alt="Expert Consultation" title="Expert Consultation" class="img-fluid rounded-circle mb-3" style="background: transparent url('img/Group 25734.png') 0% 0% no-repeat padding-box; opacity: 1; width: 100%; max-width: 200px; height: auto; padding: 7px; margin-top: 20px;">
+                <div class="text-center" style="color: #222933; opacity: 1; margin-bottom: 25px;">
+                  <h5>Expert Consultation</h5>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-      <!-- Box 5 -->
-      <div class="col-lg-2" data-aos="fade-up" data-aos-duration="1000">
-        <div class="custom-box p-1 mt-2 mb-2">
-          <!-- Box Content -->
-          <div class="shadow bg-white radius-15 d-flex flex-column align-items-center justify-content-center p-2" style="background: #FFFFFF; width:100%; border-radius: 18px; opacity: 1; height: 100%;">
-            <img src="assets/img/666.png" alt="Transparent Communication" title="Transparent Communication" class="img-fluid rounded-circle mb-3" style=" background: transparent url('img/Group 25734.png') 0% 0% no-repeat padding-box; opacity: 1; top: 3544px; left: 445px; width: 201px; height: 89px; padding: 7px;">
-            <div class="text-center" style="top: 3670px; left: 465px; width: 163px; height: 40px; /* UI Properties */ text-align: center;  color: #222933; opacity: 1; margin-bottom: 25px;">
-              <h5>Transparent Communication</h5>
+          <!-- Box 5 -->
+          <div class="col-lg-2 col-md-9 col-6" data-aos="fade-up" data-aos-duration="1000">
+            <div class="custom-box p-1 mt-2 mb-2">
+              <!-- Box Content -->
+              <div class="shadow bg-white radius-15 d-flex flex-column align-items-center justify-content-center p-2" style="background: #FFFFFF; width:100%; border-radius: 18px; opacity: 1; height: 100%;">
+                <img src="assets/img/666.png" alt="Transparent Communication" title="Transparent Communication" class="img-fluid rounded-circle mb-3" style="background: transparent url('img/Group 25734.png') 0% 0% no-repeat padding-box; opacity: 1; width: 100%; max-width: 200px; height: auto; padding: 7px; margin-top: 20px;">
+                <div class="text-center" style="color: #222933; opacity: 1; margin-bottom: 25px;">
+                  <h5>Transparent Communication</h5>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-      <!-- Box 6 -->
-      <div class="col-lg-2" data-aos="fade-up" data-aos-duration="1000">
-        <div class="custom-box p-1 mt-2 mb-2">
-          <!-- Box Content -->
-          <div class="shadow bg-white radius-15 d-flex flex-column align-items-center justify-content-center p-2" style="background: #FFFFFF; width:100%; border-radius: 18px; opacity: 1; height: 100%;">
-            <img src="assets/img/6.png" alt="Result Oriented Solutions" title="Result Oriented Solutions" class="img-fluid rounded-circle mb-3" style=" background: transparent url('img/Group 25734.png') 0% 0% no-repeat padding-box; opacity: 1; top: 3544px; left: 445px; width: 201px; height: 89px; padding: 7px;">
-            <div class="text-center" style="top: 3670px; left: 465px; width: 163px; height: 40px; /* UI Properties */ text-align: center;  color: #222933; opacity: 1; margin-bottom: 25px; ">
-              <h5>Result Oriented Solutions</h5>
+          <!-- Box 6 -->
+          <div class="col-lg-2 col-md-9 col-6" data-aos="fade-up" data-aos-duration="1000">
+            <div class="custom-box p-1 mt-2 mb-2">
+              <!-- Box Content -->
+              <div class="shadow bg-white radius-15 d-flex flex-column align-items-center justify-content-center p-2" style="background: #FFFFFF; width:100%; border-radius: 18px; opacity: 1; height: 100%;">
+                <img src="assets/img/6.png" alt="Result Oriented Solutions" title="Result Oriented Solutions" class="img-fluid rounded-circle mb-3" style="background: transparent url('img/Group 25734.png') 0% 0% no-repeat padding-box; opacity: 1; width: 100%; max-width: 200px; height: auto; padding: 7px; margin-top: 20px;">
+                <div class="text-center" style="color: #222933; opacity: 1; margin-bottom: 25px; ">
+                  <h5>Result Oriented Solutions</h5>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-
-   </section>
+  </section>
+  
    
   
 
@@ -743,12 +810,26 @@ opacity: 1;">
   </section>
  
   
-  
     
+  
+       <style>
+        @media (max-width: 991.98px) {
+            .Desktop-Hidden {
+                display: none;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .Mobile-Visible {
+                display: none;
+            }
+        }
+    </style>
                     
   <!-- ======= Grow your business ======= -->   
-  <section id="Grow" class="main1 d-flex align-items-center background-color:#f2f2f2; "data-aos="fade-up">
-    <div class="container"  style="flex-direction: row-reverse;">
+  <section id="Grow" class="main1 Mobile-Hidden d-flex align-items-center background-color:#f2f2f2; "
+        data-aos="fade-up">
+    <div class="container Mobile-Hidden"  style="flex-direction: row-reverse;">
 
       <h2 class="section-title2 color-black" style="font-weight: bold; color:black;">Are you ready to grow  <br><span style="color: #FA5F6B;">Your Business?</span> <br>
         <div class="separator"></div>
@@ -780,17 +861,22 @@ opacity: 1;">
           color: #4A4A4A;
           opacity: 1;">501 The Binary Tower by Omniyat Business Bay, Dubai</p>
 
-          <div class="text-left ">
+          <div class="text-left "style="text-align:left">
        
-            <div style=" display: inline-block;">
-              <img src="assets/img/eg ph.png" alt="Mobile-Number" class="Mobile-Number" style="width: 14%; margin-right: 2px;"> <span>+971 52 923 5518</span>
+            <div style="display: inline-block; margin-right: 5px;">
+              <img src="assets/img/eg ph.png" alt="Mobile-Number" class="Mobile-Number" style="width: 30px;">
+              <span>+971 52 923 5518</span>
           </div>
-          <div style=" display: inline-block;">
-              <img src="assets/img/location.png" alt="Mobile-Number" class="Mobile-Number" style="width: 26%; margin-right: 2px;"> <span>Location</span>
+          <div style="display: inline-block; margin-right: 5px; margin-left: 10px;">
+              <img src="assets/img/location.png" alt="Mobile-Number" class="Mobile-Number" style="width: 30px;">
+              <span>Location</span>
           </div>
-          <div style=" display: inline-block; text-align: right;">
-              <img src="assets/img/whatsapp.png" alt="Mobile-Number" class="Mobile-Number" style="width: 15%; margin-right: 2px;"> <span>Direct Message</span>
+          <div style="display: inline-block; margin-right: 10px; margin-left: 4px;">
+              <img src="assets/img/whatsapp.png" alt="Mobile-Number" class="Mobile-Number" style="width: 25px;">
+              <span>Direct Message</span>
           </div>
+          
+          
           
           </div>
         </div>
@@ -808,27 +894,29 @@ opacity: 1;">
           </div>
 
           <p class="text-left regular-text mt-4 mb-4 text-black" style="  top: 4838px;
-          left: 1022px;
-          width: 747px;
-          height: 32px;
           font-weight: lighter;
-          font-size: 17px;
           text-align: left;
+          font-size: 17px;
           font-family: normal normal normal 22px/27px Helvetica Neue;
           letter-spacing: 0px;
           color: #4A4A4A;
-          opacity: 1; ">Villa 79 North Chooueifat, 5th settlement, Cairo</p>
+          opacity: 1;">Villa 79 North Chooueifat, 5th settlement, Cairo</p>
+          
 
-          <div class="text-left">
-            <div style="margin-right: 10px; display: inline-block;">
-              <img src="assets/img/eg ph.png" alt="Mobile-Number" class="Mobile-Number" style="width: 14%; margin-right: 2px;"> <span>+201000018081</span>
-          </div>
-          <div style=" display: inline-block;">
-            <img src="assets/img/location.png" alt="Mobile-Number" class="Mobile-Number" style="width: 26%; margin-right: 2px;"> <span>Location</span>
-        </div>
-        <div style=" display: inline-block; text-align: right;">
-            <img src="assets/img/whatsapp.png" alt="Mobile-Number" class="Mobile-Number" style="width: 15%; margin-right: 2px;"> <span>Direct Message</span>
-        </div>
+<div class="text-left "style="text-align:left">
+       
+  <div style="display: inline-block; margin-right: 5px;">
+    <img src="assets/img/eg ph.png" alt="Mobile-Number" class="Mobile-Number" style="width: 30px;">
+    <span>+971 52 923 5518</span>
+</div>
+<div style="display: inline-block; margin-right: 5px; margin-left: 10px;">
+    <img src="assets/img/location.png" alt="Mobile-Number" class="Mobile-Number" style="width: 30px;">
+    <span>Location</span>
+</div>
+<div style="display: inline-block; margin-right: 10px; margin-left: 4px;">
+    <img src="assets/img/whatsapp.png" alt="Mobile-Number" class="Mobile-Number" style="width: 25px;">
+    <span>Direct Message</span>
+</div>
           </div>
         </div>
       </div>
@@ -933,24 +1021,232 @@ opacity: 1;">
     
 </section>
 
+<style>
+  @media (max-width: 991.98px) {
+      .Desktop-Hidden {
+          display: none;
+      }
+  }
+
+  @media (min-width: 992px) {
+      .Desktop-Hidden-Visible {
+          display: none;
+      }
+  }
+</style>
+<style>
+  @media (min-width: 992px) {
+    .Desktop-Hidden {
+          display: none !important;
+      }
+  }
+  @media (max-width: 991px) {
+    .Desktop-Hidden {
+          display: block !important;
+      }
+  }
+</style>
+
+
+
+
+<section id="Grow" class="main1 Desktop-Hidden d-flex align-items-center background-color:#f2f2f2; "
+        data-aos="fade-up">
+    <div class="container Desktop-Hidden" >
+
+      <h2 class="section-title2 color-black" style="font-weight: bold; color:black;">Are you ready to grow  <br><span style="color: #FA5F6B;">Your Business?</span> <br>
+        <div class="separator"></div>
+        <div class="separator1"></div>
+        <div class="separator2"></div>
+    </h2>
+
+      
+      <div class="row" style="flex-direction: column-reverse;">
+      <div class="col-md-5 order-md-1" data-aos="fade-up" data-aos-duration="1000">
+        <div class="custom-section " data-aos="fade-up" data-aos-duration="1000"style="padding:28px">
+          <div class="left-align text-left ">
+            <img src="assets/img/uae.png" alt="UAE Flag" class="uae-flag" style="
+            left: 1018px;
+            width: 30px;
+            height: 30px;
+            
+            background: transparent url('img/515YGSZT0TL.UF1000,1000_QL80.png') 0% 0% no-repeat padding-box;
+            opacity: 1;">
+            <span class="bold-text ">United Arab Emirates</span>
+          </div>
+
+          <p class="text-left regular-text mt-2 mb-2 text-black" style="  top: 4838px;
+          font-weight: lighter;
+          text-align: left;
+          font-size: 17px;
+          font-family: normal normal normal 22px/27px Helvetica Neue;
+          letter-spacing: 0px;
+          color: #4A4A4A;
+          opacity: 1;">501 The Binary Tower by Omniyat Business Bay, Dubai</p>
+
+<div class="text-left" style="text-align: left;">
+  <div style="display: block; margin-bottom: 5px;">
+      <img src="assets/img/eg ph.png" alt="Mobile-Number" class="Mobile-Number" style="width: 30px; vertical-align: middle;">
+      <span style="vertical-align: middle;">+971 52 923 5518 </span>
+  </div>
+  <div style="display: block; margin-bottom: 5px;">
+      <img src="assets/img/location.png" alt="Mobile-Number" class="Mobile-Number" style="width: 30px; vertical-align: middle;">
+      <span style="vertical-align: middle;">Location</span>
+  </div>
+  <div style="display: block;">
+      <img src="assets/img/whatsapp.png" alt="Mobile-Number" class="Mobile-Number" style="width: 25px; vertical-align: middle;">
+      <span style="vertical-align: middle;">Direct Message</span>
+  </div>
+          
+          
+          
+          </div>
+        </div>
+
+        <div class="custom-section " data-aos="fade-up" data-aos-duration="1000"style="padding:28px">
+          <div class="left-align text-left ">
+            <img src="assets/img/egy.png" alt="UAE Flag" class="uae-flag" style="
+            left: 1018px;
+            width: 30px;
+            height: 30px;
+            
+            background: transparent url('img/515YGSZT0TL.UF1000,1000_QL80.png') 0% 0% no-repeat padding-box;
+            opacity: 1;">
+            <span class="bold-text ">Egypt</span>
+          </div>
+
+          <p class="text-left regular-text mt-2 mb-2 text-black" style="  top: 4838px;
+          font-weight: lighter;
+          text-align: left;
+          font-size: 17px;
+          font-family: normal normal normal 22px/27px Helvetica Neue;
+          letter-spacing: 0px;
+          color: #4A4A4A;
+          opacity: 1;">Villa 79 North Chooueifat, 5th settlement, Cairo</p>
+          
+
+          <div class="text-left" style="text-align: left;">
+            <div style="display: block; margin-bottom: 5px;">
+                <img src="assets/img/eg ph.png" alt="Mobile-Number" class="Mobile-Number" style="width: 30px; vertical-align: middle;">
+                <span style="vertical-align: middle;">+201000018081</span>
+            </div>
+            <div style="display: block; margin-bottom: 5px;">
+                <img src="assets/img/location.png" alt="Mobile-Number" class="Mobile-Number" style="width: 30px; vertical-align: middle;">
+                <span style="vertical-align: middle;">Location</span>
+            </div>
+            <div style="display: block;">
+                <img src="assets/img/whatsapp.png" alt="Mobile-Number" class="Mobile-Number" style="width: 25px; vertical-align: middle;">
+                <span style="vertical-align: middle;">Direct Message</span>
+            </div>
+        </div>
+        
+        </div>
+      </div>
+
+      <div id="contactSection" class="col-lg-7 p-3 order-md-2" data-aos="fade-up" data-aos-duration="1000">
+        <div class="bg-grey contact-info border-radius-15 align-items-center justify-content-center py-2 px-1">
+            <div class="col-12">
+                <div class="p-lg-2 p-1">
+                    <form method="POST" action="" data-hs-cf-bound="true">
+                        <div class="form-group row">
+                          <div class="col-12 px-1 p-0 input-icon input-with-icon">
+                            <label for="name" class="form-label text-white"></label>
+                            <div class="input-group" style="border-radius: 25px;">
+                                <span class="input-group-text" id="name-addon" style="border-top-left-radius: 25px; border-bottom-left-radius: 25px; padding: 17px; background-color: #ffffff;  color: #FA6773;">
+                                    <i class="fa-solid fa-circle-user"></i>
+                                </span>
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Enter your full name" required="required" style="border-radius: 0px 25px 25px 0px;">
+                            </div>
+                        </div>
+                        
+                            <div class="col px-1 p-0 input-icon input-with-icon">
+                                <label for="email" class="form-label text-white"></label>
+                                <div class="input-group" style="border-radius: 25px;">
+                                    <span class="input-group-text" id="email-addon"
+                                        style="border-top-left-radius: 25px; border-bottom-left-radius: 25px; padding: 14px;  color: #FA6773; background-color: #ffffff;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="margin-left: 8px;">
+                                          <path id="FontAwsome_at_" data-name="FontAwsome (at)" d="M20,8a12,12,0,1,0,6.552,22.054,1.163,1.163,0,0,0,.269-1.712l-.492-.6a1.158,1.158,0,0,0-1.518-.248A8.9,8.9,0,1,1,20,11.1c4.845,0,8.9,2.788,8.9,7.742,0,1.877-1.021,3.858-2.815,4.05-.839-.022-.818-.622-.652-1.453l1.134-5.86a1.161,1.161,0,0,0-1.14-1.382H23.254a.654.654,0,0,0-.65.58v0a3.721,3.721,0,0,0-2.9-1.054c-3.609,0-6.669,3.011-6.669,7.329,0,3.16,1.78,5.123,4.645,5.123a4.9,4.9,0,0,0,3.629-1.855c.461,1.65,1.965,1.65,3.421,1.65C30,25.971,32,22.506,32,18.839,32,12.241,26.679,8,20,8ZM18.951,22.73a1.734,1.734,0,0,1-1.745-1.973c0-2.177,1.489-3.519,2.837-3.519,1.079,0,1.723.737,1.723,1.973A3.339,3.339,0,0,1,18.951,22.73Z" transform="translate(-8 -8)" fill="#e97176"/>
+                                        </svg>
+                                    </span>
+                                    <input type="text" class="form-control" id="Phone" name="Phone"
+                                        placeholder="What is your professional email?" required="required"
+                                        style="border-radius: 0px 25px 25px 0px;">
+                                </div>
+                            </div>
+                        </div>
+                         <!-- Mobile Number -->
+    <div class="col px-1 p-0 input-icon input-with-icon">
+      <label for="Mobile-number" class="form-label text-white">Mobile Number</label>
+      <div class="input-group" style="border-radius: 25px; width: 104%;">
+          <span class="input-group-text" id="mobile-addon" style="border-top-left-radius: 25px; border-bottom-left-radius: 25px;  background-color: #ffffff; margin-left: 2px;">
+              <img src="assets/img/download (1).png1.png" alt="mobile-number" style="width: 25px; height: auto;">
+              <span style="color: black; font-size: 15px;"> +971</span>
+          </span>
+          <input type="text" class="form-control" id="mobile-number" name="mobile-number" placeholder="Enter your mobile number" required="required" style="border-radius: 0px 25px 25px 0px;">
+      </div>
+  </div>
+
+  <!-- Budget -->
+  <div class="col px-1 p-0 input-icon input-with-icon">
+      <label for="budget" class="form-label text-white">Budget</label>
+      <div class="input-group" style="border-radius: 25px; width: 104%;">
+          <span class="input-group-text" id="budget-addon" style="border-top-left-radius: 25px; border-bottom-left-radius: 25px; padding: 10px; color: #FA6773; background-color: #ffffff; margin-left: 0px;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="29.857" height="23" viewBox="0 0 30.857 24" style="margin-left: 5px;">
+                  <path id="FontAwsome_credit-card_" data-name="FontAwsome (credit-card)" d="M28.28,32H2.577A2.573,2.573,0,0,0,0,34.571V53.429A2.573,2.573,0,0,0,2.577,56h25.7a2.573,2.573,0,0,0,2.577-2.571V34.571A2.573,2.573,0,0,0,28.28,32ZM2.9,34.571H27.959a.322.322,0,0,1,.321.321v2.25H2.577v-2.25A.322.322,0,0,1,2.9,34.571ZM27.959,53.429H2.9a.322.322,0,0,1-.321-.321V44h25.7v9.107A.322.322,0,0,1,27.959,53.429ZM10.286,48.071v2.143a.645.645,0,0,1-.643.643H5.786a.645.645,0,0,1-.643-.643V48.071a.645.645,0,0,1,.643-.643H9.643A.645.645,0,0,1,10.286,48.071Zm10.286,0v2.143a.645.645,0,0,1-.643.643H12.643A.645.645,0,0,1,12,50.214V48.071a.645.645,0,0,1,.643-.643h7.286A.645.645,0,0,1,20.571,48.071Z" transform="translate(0 -32)" fill="#e97176"/>
+              </svg>
+          </span>
+          <input type="text" class="form-control" id="Budget" name="Budget" placeholder="Enter your budget" required="required" style="border-radius: 0px 25px 25px 0px; ">
+          <div class="dropdown" style="display: none;">
+              <select name="freeConsultationBudget" id="budget-select" class="form-control">
+                  <option value="+100,000-USD">+100,000 USD</option>
+                  <option value="+60,000-USD">+60,000 USD</option>
+                  <option value="+35,000-USD">+35,000 USD</option>
+                  <option value="+15,000-USD">+15,000 USD</option>
+                  <option value="0">undetermined</option>
+              </select>
+          </div>
+      </div>
+  </div>
+</div>
+
+                        <div class="form-group row">
+                            <div class="col-md-12">
+                                <label for="describe"></label>
+                                <textarea rows="5" name="freeConsultationMessage" id="describe"
+                                    class="form-control custom-textarea"
+                                    placeholder=" Like to tell us about your business?"
+                                    style="border-radius: 15px; width: 92%; margin-left: 10px;"></textarea>
+                            </div>
+                        </div>
+                        <div style="margin-top: 15px;  text-align: right; width: 85%; margin-left: 13px;">
+                          <button id="submit-button" class="btn2 btn-primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="26" viewBox="0 0 30 26">
+                              <path id="FontAwsome_weixin_" data-name="FontAwsome (weixin)" d="M33.3,39.868a7.5,7.5,0,0,1,1.025.064C33.422,35.383,28.835,32,23.62,32,17.773,32,13,36.224,13,41.6c0,3.1,1.6,5.657,4.249,7.636l-1.053,3.4,3.709-1.979a17.185,17.185,0,0,0,3.72.563c.338,0,.66-.017,1-.046a8.451,8.451,0,0,1-.338-2.367A8.94,8.94,0,0,1,33.3,39.868ZM27.6,36.8a1.413,1.413,0,0,1,0,2.82,1.421,1.421,0,1,1,0-2.82Zm-7.44,2.82a1.421,1.421,0,1,1,0-2.82,1.412,1.412,0,0,1,0,2.82ZM43,48.676c0-4.52-4.249-8.2-9.022-8.2-5.056,0-9.022,3.679-9.022,8.2s3.971,8.2,9.022,8.2a13.056,13.056,0,0,0,3.2-.574L40.087,58l-.807-2.82C41.418,53.474,43,51.217,43,48.676ZM31.049,47.254a1.131,1.131,0,0,1,0-2.257,1.144,1.144,0,1,1,0,2.257Zm5.842,0a1.131,1.131,0,0,1,0-2.257,1.144,1.144,0,1,1,0,2.257Z" transform="translate(-13 -32)" fill="#e97176"/>
+                            </svg>
+                            <span>Let's Talk</span>
+                          </button>
+                      </div>
+                      
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</section>
+
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script>
   AOS.init();
 </script>
 
-
-
-
-
-
-   
-  
   </main><!-- End #main -->
 
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="footer-top" style="background: transparent url('assets/img/back footer.png') 0% 0% no-repeat padding-box; opacity: 1; ">
+   <!-- ======= Footer ======= -->
+   <footer id="footer">
+    <div class="footer-top" style="background: transparent url('assets/img/back footer.png') 0% 0% no-repeat padding-box; opacity: 1; background-size: cover;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -983,9 +1279,9 @@ opacity: 1;">
                         <div class="separator5" style=" display: inline-block;border-top: 3px solid #fa6773; width: 2%;"></div>
                     </h4>
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Careers</a></li>
+                        <li><a href="#"> Home</a></li>
+                        <li><a href="#"> About us</a></li>
+                        <li><a href="#"> Careers</a></li>
                         <li><a href="#">Blog & News</a></li>
                     </ul>
                 </div>
@@ -1024,7 +1320,7 @@ opacity: 1;">
                 </div>
                 <div class="col-md-6">
                     <div class="footer-content">
-                        <div class="credits ">
+                        <div class=" Police-Privacy">
                             Police Privacy - Terms & conditions - Contact Us 
                         </div>
                     </div>
@@ -1033,6 +1329,8 @@ opacity: 1;">
         </div>
     </div>
 </footer>
+
+
 
 
     
